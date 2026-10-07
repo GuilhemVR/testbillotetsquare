@@ -17,7 +17,6 @@
     content="Découvrez la Boucherie du Square, votre boucherie artisanale au cœur du 15e arrondissement de Paris."
   >
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
   <link
@@ -33,102 +32,58 @@
 
   <link rel="stylesheet" href="style.css">
 
-
   <style>
 
-    /* =========================================================
-    PAGE SQUARE
-    ========================================================= */
-
-
     .internal-header {
-
       background: #0c0b0a;
-
       color: white;
-
     }
-
 
     .internal-header .site-header {
-
-      border-bottom:
-        1px solid
-        rgba(255,255,255,.16);
-
+      border-bottom: 1px solid rgba(255,255,255,.16);
     }
-
-
 
     /* PHOTO D'OUVERTURE */
 
     .shop-hero {
-
       position: relative;
-
-      min-height: 520px;
+      min-height: 430px;
 
       background-image:
         linear-gradient(
           180deg,
-          rgba(0,0,0,.08),
-          rgba(0,0,0,.16)
+          rgba(0,0,0,.05),
+          rgba(0,0,0,.12)
         ),
         url("images/square-facade.jpg");
 
       background-size: cover;
-
-      background-position: center;
-
+      background-position: center top;
     }
-
-
 
     /* PRESENTATION */
 
     .shop-intro {
-
-      padding:
-        105px 0;
-
-      background:
-        #f8f5ef;
-
+      padding: 105px 0;
+      background: #f8f5ef;
     }
-
 
     .shop-intro-grid {
-
       display: grid;
-
-      grid-template-columns:
-        1.2fr .8fr;
-
+      grid-template-columns: 1.2fr .8fr;
       gap: 110px;
-
       align-items: start;
-
     }
-
 
     .shop-label {
-
-      margin:
-        0 0 18px;
-
+      margin: 0 0 18px;
       font-size: 11px;
-
       text-transform: uppercase;
-
       letter-spacing: .25em;
-
       color: #746d65;
-
     }
 
-
     .shop-intro h1 {
-
       margin: 0;
 
       font-family:
@@ -136,26 +91,14 @@
         Georgia,
         serif;
 
-      font-size:
-        clamp(
-          58px,
-          6vw,
-          86px
-        );
-
+      font-size: clamp(58px, 6vw, 86px);
       font-weight: 400;
-
       line-height: .92;
-
       letter-spacing: -.04em;
-
     }
 
-
     .shop-introduction {
-
       max-width: 680px;
-
       margin-top: 28px;
 
       font-family:
@@ -164,250 +107,140 @@
         serif;
 
       font-size: 25px;
-
       line-height: 1.35;
-
       color: #514b45;
-
     }
-
-
 
     /* INFOS PRATIQUES */
 
     .shop-practical {
-
-      padding:
-        34px 0 0;
-
-      border-top:
-        1px solid
-        rgba(24,21,18,.16);
-
+      padding: 34px 0 0;
+      border-top: 1px solid rgba(24,21,18,.16);
     }
-
 
     .practical-item {
-
       margin-bottom: 27px;
-
     }
 
-
     .practical-label {
-
       display: block;
-
       margin-bottom: 8px;
 
       font-size: 10px;
-
       text-transform: uppercase;
-
       letter-spacing: .18em;
 
       color: #81796f;
-
     }
 
-
     .practical-value {
-
       font-family:
         "Cormorant Garamond",
         Georgia,
         serif;
 
       font-size: 22px;
-
       line-height: 1.35;
-
     }
-
 
     .shop-buttons {
-
       display: flex;
-
       flex-direction: column;
-
       gap: 11px;
-
       margin-top: 35px;
-
     }
-
 
     .shop-buttons .btn {
-
       width: 100%;
-
     }
-
 
     .btn-dark {
-
-      background:
-        #151311;
-
+      background: #151311;
       color: white;
-
     }
-
 
     .btn-line-dark {
-
-      border:
-        1px solid
-        #181512;
-
-      color:
-        #181512;
-
+      border: 1px solid #181512;
+      color: #181512;
     }
-
-
 
     /* QUOTIDIEN */
 
     .daily-section {
-
-      padding:
-        115px 0;
-
-      background:
-        #eee9e0;
-
+      padding: 115px 0;
+      background: #eee9e0;
     }
-
 
     .daily-grid {
-
       display: grid;
-
-      grid-template-columns:
-        .9fr 1.1fr;
-
+      grid-template-columns: .9fr 1.1fr;
       gap: 90px;
-
       align-items: center;
-
     }
 
-
     .daily-photo {
-
       min-height: 590px;
 
-      background:
-        #d8d1c7;
+      background: #d8d1c7;
 
       background-image:
         url("images/square-equipe.jpg");
 
       background-size: cover;
-
       background-position: center;
-
     }
-
 
     .daily-content {
-
       max-width: 600px;
-
     }
 
-
     .daily-content h2 {
-
-      margin:
-        0 0 28px;
+      margin: 0 0 28px;
 
       font-family:
         "Cormorant Garamond",
         Georgia,
         serif;
 
-      font-size:
-        clamp(
-          50px,
-          5vw,
-          72px
-        );
-
+      font-size: clamp(50px, 5vw, 72px);
       line-height: .95;
-
       font-weight: 400;
-
       letter-spacing: -.035em;
-
     }
-
 
     .daily-content p {
-
       font-size: 15px;
-
       line-height: 1.9;
-
       color: #665f57;
-
     }
-
 
     .daily-content .btn {
-
       margin-top: 28px;
-
     }
-
-
 
     /* AUTRE BOUTIQUE */
 
     .other-shop {
-
-      padding:
-        85px 0;
-
-      background:
-        #f8f5ef;
-
+      padding: 85px 0;
+      background: #f8f5ef;
     }
-
 
     .other-shop-inner {
-
       display: flex;
-
       justify-content: space-between;
-
       align-items: center;
-
       gap: 40px;
-
     }
-
 
     .other-shop p {
-
-      margin:
-        0 0 8px;
-
+      margin: 0 0 8px;
       font-size: 10px;
-
       text-transform: uppercase;
-
       letter-spacing: .23em;
-
       color: #81796f;
-
     }
 
-
     .other-shop h2 {
-
       margin: 0;
 
       font-family:
@@ -415,122 +248,63 @@
         Georgia,
         serif;
 
-      font-size:
-        clamp(
-          40px,
-          4vw,
-          60px
-        );
-
+      font-size: clamp(40px, 4vw, 60px);
       font-weight: 400;
-
     }
-
-
 
     /* MOBILE */
 
-    @media
-    (max-width: 850px) {
-
+    @media (max-width: 850px) {
 
       .shop-hero {
-
-        min-height:
-          360px;
-
+        min-height: 300px;
+        background-position: center top;
       }
-
 
       .shop-intro {
-
-        padding:
-          70px 0;
-
+        padding: 70px 0;
       }
-
 
       .shop-intro-grid {
-
-        grid-template-columns:
-          1fr;
-
-        gap:
-          55px;
-
+        grid-template-columns: 1fr;
+        gap: 55px;
       }
-
 
       .shop-introduction {
-
-        font-size:
-          22px;
-
+        font-size: 22px;
       }
-
 
       .daily-section {
-
-        padding:
-          75px 0;
-
+        padding: 75px 0;
       }
-
 
       .daily-grid {
-
-        grid-template-columns:
-          1fr;
-
-        gap:
-          50px;
-
+        grid-template-columns: 1fr;
+        gap: 50px;
       }
-
 
       .daily-photo {
-
-        min-height:
-          380px;
-
+        min-height: 380px;
       }
 
-
       .other-shop-inner {
-
-        flex-direction:
-          column;
-
-        align-items:
-          flex-start;
-
+        flex-direction: column;
+        align-items: flex-start;
       }
 
     }
-
 
   </style>
 
 </head>
 
-
-
 <body>
-
-
-<!-- =========================================================
-HEADER
-========================================================= -->
 
 <div class="internal-header">
 
   <header class="site-header">
 
-
-    <a
-      href="index.html"
-      class="brand"
-    >
+    <a href="index.html" class="brand">
 
       <span class="brand-main">
         Le Billot & le Square
@@ -542,23 +316,14 @@ HEADER
 
     </a>
 
-
-
     <nav class="main-nav">
-
 
       <div class="nav-dropdown">
 
         <button class="nav-dropdown-button">
-
           Nos boutiques
-
-          <span class="nav-arrow">
-            ⌄
-          </span>
-
+          <span class="nav-arrow">⌄</span>
         </button>
-
 
         <div class="dropdown-menu">
 
@@ -574,49 +339,32 @@ HEADER
 
       </div>
 
-
       <a href="nos-produits.html">
         Nos produits
       </a>
-
 
       <a href="la-maison.html">
         La Maison
       </a>
 
-
       <a href="carte-de-saison.html">
         Notre carte de saison
       </a>
 
-
     </nav>
-
-
 
     <a
       href="nos-produits.html"
       class="header-cta"
     >
-
       Voir nos produits
-
-      <span>
-        →
-      </span>
-
+      <span>→</span>
     </a>
-
 
   </header>
 
 </div>
 
-
-
-<!-- =========================================================
-PHOTO D'OUVERTURE
-========================================================= -->
 
 <section
   class="shop-hero"
@@ -625,34 +373,20 @@ PHOTO D'OUVERTURE
 </section>
 
 
-
-<!-- =========================================================
-PRESENTATION + INFORMATIONS PRATIQUES
-========================================================= -->
-
 <section class="shop-intro">
-
 
   <div class="container shop-intro-grid">
 
-
     <div>
 
-
       <p class="shop-label">
-
         Paris 15ᵉ · Rue du Commerce
-
       </p>
 
-
       <h1>
-
         Boucherie<br>
         du Square
-
       </h1>
-
 
       <p class="shop-introduction">
 
@@ -664,13 +398,10 @@ PRESENTATION + INFORMATIONS PRATIQUES
 
       </p>
 
-
     </div>
 
 
-
     <aside class="shop-practical">
-
 
       <div class="practical-item">
 
@@ -686,7 +417,6 @@ PRESENTATION + INFORMATIONS PRATIQUES
       </div>
 
 
-
       <div class="practical-item">
 
         <span class="practical-label">
@@ -698,7 +428,6 @@ PRESENTATION + INFORMATIONS PRATIQUES
         </div>
 
       </div>
-
 
 
       <div class="practical-item">
@@ -714,56 +443,35 @@ PRESENTATION + INFORMATIONS PRATIQUES
       </div>
 
 
-
       <div class="shop-buttons">
-
 
         <a
           href="#"
           class="btn btn-dark"
         >
-
           Appeler la boutique
-
         </a>
-
 
         <a
           href="#"
           class="btn btn-line-dark"
         >
-
           Itinéraire
-
-          <span>
-            →
-          </span>
-
+          <span>→</span>
         </a>
-
 
       </div>
 
-
     </aside>
 
-
   </div>
-
 
 </section>
 
 
-
-<!-- =========================================================
-L'ESPRIT DU QUARTIER
-========================================================= -->
-
 <section class="daily-section">
 
-
   <div class="container daily-grid">
-
 
     <div
       class="daily-photo"
@@ -772,24 +480,16 @@ L'ESPRIT DU QUARTIER
     </div>
 
 
-
     <div class="daily-content">
 
-
       <p class="section-kicker">
-
         Boucherie du Square
-
       </p>
 
-
       <h2>
-
         Le conseil,<br>
         au cœur du quartier
-
       </h2>
-
 
       <p>
 
@@ -806,7 +506,6 @@ L'ESPRIT DU QUARTIER
 
       </p>
 
-
       <p>
 
         Une adresse pensée pour le quotidien,
@@ -817,175 +516,117 @@ L'ESPRIT DU QUARTIER
       </p>
 
 
-
       <a
         href="la-maison.html"
         class="btn btn-dark"
       >
-
         Découvrir la Maison
-
-        <span>
-          →
-        </span>
-
+        <span>→</span>
       </a>
-
 
     </div>
 
-
   </div>
-
 
 </section>
 
 
-
-<!-- =========================================================
-AUTRE BOUTIQUE
-========================================================= -->
-
 <section class="other-shop">
-
 
   <div class="container other-shop-inner">
 
-
     <div>
-
 
       <p>
         Découvrez aussi notre autre adresse
       </p>
 
-
       <h2>
         Le Billot de Daguerre
       </h2>
 
-
     </div>
-
 
 
     <a
       href="billot-de-daguerre.html"
       class="text-link"
     >
-
       Découvrir Le Billot de Daguerre
-
-      <span>
-        →
-      </span>
-
+      <span>→</span>
     </a>
 
-
   </div>
-
 
 </section>
 
 
-
-<!-- =========================================================
-FOOTER
-========================================================= -->
-
 <footer class="footer">
-
 
   <div class="container footer-top">
 
-
     <div>
 
-
       <div class="footer-brand">
-
         Le Billot & le Square
-
       </div>
 
-
       <p>
-
         Deux boucheries artisanales à Paris,<br>
         dans les 14ᵉ et 15ᵉ arrondissements.
-
       </p>
-
 
     </div>
 
 
-
     <nav class="footer-nav">
-
 
       <a href="billot-de-daguerre.html">
         Le Billot de Daguerre
       </a>
 
-
       <a href="boucherie-du-square.html">
         Boucherie du Square
       </a>
-
 
       <a href="nos-produits.html">
         Nos produits
       </a>
 
-
       <a href="la-maison.html">
         La Maison
       </a>
-
 
       <a href="carte-de-saison.html">
         Notre carte de saison
       </a>
 
-
     </nav>
-
 
   </div>
 
 
-
   <div class="container footer-bottom">
-
 
     <span>
       © Le Billot & le Square
     </span>
 
-
     <div>
-
 
       <a href="#">
         Mentions légales
       </a>
 
-
       <a href="#">
         Confidentialité
       </a>
 
-
     </div>
-
 
   </div>
 
-
 </footer>
-
 
 </body>
 
