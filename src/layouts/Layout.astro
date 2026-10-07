@@ -1,0 +1,12 @@
+---
+import '../../public/style.css';
+const {title='Deux boucheries artisanales à Paris', hero=false}=Astro.props;
+const path=Astro.url.pathname;
+---
+<!doctype html><html lang="fr"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="robots" content="noindex,nofollow"/><meta name="description" content="Le Billot de Daguerre et la Boucherie du Square : deux boucheries artisanales à Paris."/><title>{title} — Le Billot &amp; le Square</title></head><body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<div class="preview">PROTOTYPE · Textes et coordonnées à valider · Photographies à intégrer</div>
+<header class:list={[{'dark':hero}]}><a class="brand" href="/" aria-label="Le Billot et le Square — Retour à l’accueil">Le Billot <i>&amp;</i> le Square<small>BOUCHERIES ARTISANALES · PARIS</small></a><nav aria-label="Navigation principale"><details class="shops"><summary>Nos boutiques</summary><div><a href="/le-billot-de-daguerre/">Le Billot de Daguerre</a><a href="/boucherie-du-square/">Boucherie du Square</a></div></details><a aria-current={path==='/nos-produits/'?'page':undefined} href="/nos-produits/">Nos produits</a><a aria-current={path==='/la-maison/'?'page':undefined} href="/la-maison/">La Maison</a><a aria-current={path==='/carte-de-saison/'?'page':undefined} href="/carte-de-saison/">Notre carte de saison</a></nav></header>
+<main id="contenu"><slot/></main>
+<footer><div><a class="brand" href="/">Le Billot <i>&amp;</i> le Square</a><p>Deux boucheries artisanales à Paris,<br/>dans les 14ᵉ et 15ᵉ arrondissements.</p></div><div class="footlinks"><a href="/le-billot-de-daguerre/">Le Billot de Daguerre</a><a href="/boucherie-du-square/">Boucherie du Square</a><a href="/nos-produits/">Nos produits</a><a href="/la-maison/">La Maison</a><a href="/carte-de-saison/">Notre carte de saison</a></div><div class="legal"><span>© Le Billot &amp; le Square</span><a href="/mentions-legales/">Mentions légales</a><a href="/confidentialite/">Confidentialité</a></div></footer>
+</body></html>
