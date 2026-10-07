@@ -1,258 +1,695 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Le Billot & le Square — Boucheries artisanales à Paris</title>
-  <meta name="description" content="Deux boucheries artisanales à Paris : Le Billot de Daguerre et la Boucherie du Square. Produits sélectionnés, savoir-faire et conseil de quartier.">
+
+  <meta
+    name="description"
+    content="Le Billot de Daguerre et la Boucherie du Square : deux boucheries artisanales à Paris."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
   <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-  <!-- HERO -->
-  <section class="hero" id="accueil">
-    <div class="hero-overlay"></div>
 
-    <header class="site-header">
-      <a href="#accueil" class="brand">
-        <span class="brand-main">Le Billot & le Square</span>
-        <span class="brand-sub">Boucheries artisanales · Paris</span>
-      </a>
+<!-- =========================================================
+HEADER / HERO
+========================================================= -->
 
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="#boutiques">Nos boutiques</a>
-        <a href="#produits">Nos produits</a>
-        <a href="#savoir-faire">Notre savoir-faire</a>
-        <a href="#maison">La Maison</a>
-      </nav>
+<section class="hero">
 
-      <a href="#produits" class="header-cta">Voir nos produits <span>→</span></a>
-    </header>
+  <div class="hero-overlay"></div>
 
-    <div class="hero-inner">
-      <p class="eyebrow">Le Billot & le Square</p>
 
-      <h1>Deux boucheries<br>artisanales à Paris</h1>
+  <header class="site-header">
 
-      <p class="hero-intro">
-        Des produits sélectionnés avec soin, le savoir-faire
-        et le conseil de vos artisans bouchers.
-      </p>
+    <a href="index.html" class="brand">
 
-      <div class="hero-actions">
-        <a href="#boutiques" class="btn btn-light">Nos boutiques <span>→</span></a>
-        <a href="#produits" class="btn btn-outline">Voir nos produits <span>→</span></a>
-      </div>
-    </div>
+      <span class="brand-main">
+        Le Billot & le Square
+      </span>
 
-    <a href="#boutiques" class="scroll-indicator" aria-label="Faire défiler vers les boutiques">
-      <span></span>
+      <span class="brand-sub">
+        Boucheries artisanales · Paris
+      </span>
+
     </a>
-  </section>
 
 
-  <!-- BOUTIQUES -->
-  <section class="section section-light" id="boutiques">
-    <div class="container">
-      <div class="section-heading">
-        <p class="section-kicker">Nos adresses</p>
-        <h2>Deux boucheries,<br>une même exigence</h2>
-        <p>
-          Deux adresses parisiennes, une même attention portée
-          à la qualité des produits et au conseil.
-        </p>
-      </div>
-
-      <div class="shop-grid">
-        <article class="shop-card">
-          <div class="image-placeholder">Photographie de façade à intégrer</div>
-          <div class="shop-card-content">
-            <p class="shop-location">Paris 14ᵉ · Rue Daguerre</p>
-            <h3>Le Billot de Daguerre</h3>
-            <p>Votre boucherie de quartier, ses produits et le conseil de ses artisans.</p>
-            <a href="#" class="text-link">Découvrir la boutique <span>→</span></a>
-          </div>
-        </article>
-
-        <article class="shop-card">
-          <div class="image-placeholder">Photographie de façade à intégrer</div>
-          <div class="shop-card-content">
-            <p class="shop-location">Paris 15ᵉ · Rue du Commerce</p>
-            <h3>Boucherie du Square</h3>
-            <p>Votre boucherie de quartier, ses produits et le conseil de ses artisans.</p>
-            <a href="#" class="text-link">Découvrir la boutique <span>→</span></a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+    <nav class="main-nav">
 
 
-  <!-- PRODUITS -->
-  <section class="section section-dark" id="produits">
-    <div class="container">
-      <div class="section-heading light">
-        <p class="section-kicker">Notre sélection</p>
-        <h2>Des produits sélectionnés<br>avec exigence</h2>
-        <p>Une première présentation de nos familles de produits, à préciser avec les équipes.</p>
-      </div>
+      <!-- NOS BOUTIQUES -->
 
-      <div class="product-grid">
-        <article class="product-card">
-          <div class="product-image placeholder-dark">Photographie réelle à intégrer</div>
-          <h3>Viandes de boucherie</h3>
-          <p>Bœuf · Veau · Agneau · Porc</p>
-        </article>
+      <div class="nav-dropdown">
 
-        <article class="product-card">
-          <div class="product-image placeholder-dark">Photographie réelle à intégrer</div>
-          <h3>Volailles</h3>
-          <p>Sélection à confirmer</p>
-        </article>
+        <button class="nav-dropdown-button">
+          Nos boutiques
+          <span class="nav-arrow">⌄</span>
+        </button>
 
-        <article class="product-card">
-          <div class="product-image placeholder-dark">Photographie réelle à intégrer</div>
-          <h3>Charcuteries & préparations maison</h3>
-          <p>Offre à confirmer</p>
-        </article>
-      </div>
+        <div class="dropdown-menu">
 
-      <a href="#" class="btn btn-outline section-button">Voir tous nos produits <span>→</span></a>
-    </div>
-  </section>
+          <a href="billot-de-daguerre.html">
+            Le Billot de Daguerre
+          </a>
 
+          <a href="boucherie-du-square.html">
+            Boucherie du Square
+          </a>
 
-  <!-- SAVOIR-FAIRE -->
-  <section class="section section-ivory" id="savoir-faire">
-    <div class="container">
-      <div class="split-heading">
-        <div>
-          <p class="section-kicker">Notre savoir-faire</p>
-          <h2>Le goût du métier</h2>
         </div>
 
-        <p class="split-copy">
-          De la sélection au conseil en boutique, découvrez le travail de nos artisans.
-          Ce texte sera enrichi à partir des échanges avec Alain.
-        </p>
       </div>
 
-      <div class="craft-grid">
-        <article class="craft-item">
-          <span>01</span>
-          <h3>Sélection</h3>
-          <p>Les critères de sélection et les fournisseurs seront présentés ici.</p>
-        </article>
 
-        <article class="craft-item">
-          <span>02</span>
-          <h3>Maturation</h3>
-          <p>Le travail de maturation sera précisé avec Alain.</p>
-        </article>
+      <!-- NOS PRODUITS -->
 
-        <article class="craft-item">
-          <span>03</span>
-          <h3>Conseils</h3>
-          <p>Le choix des morceaux, leur préparation et leur cuisson.</p>
-        </article>
-      </div>
+      <a href="nos-produits.html">
+        Nos produits
+      </a>
+
+
+      <!-- LA MAISON -->
+
+      <a href="la-maison.html">
+        La Maison
+      </a>
+
+
+      <!-- CARTE SAISON -->
+
+      <a href="carte-de-saison.html">
+        Notre carte de saison
+      </a>
+
+
+    </nav>
+
+
+    <a
+      href="nos-produits.html"
+      class="header-cta"
+    >
+      Voir nos produits
+      <span>→</span>
+    </a>
+
+
+  </header>
+
+
+
+  <div class="hero-inner">
+
+    <p class="eyebrow">
+      Le Billot & le Square
+    </p>
+
+
+    <h1>
+      Deux boucheries<br>
+      artisanales à Paris
+    </h1>
+
+
+    <p class="hero-intro">
+
+      Des produits sélectionnés avec soin,
+      le savoir-faire et le conseil
+      de vos artisans bouchers.
+
+    </p>
+
+
+    <div class="hero-actions">
+
+      <a
+        href="#boutiques"
+        class="btn btn-light"
+      >
+        Nos boutiques
+        <span>→</span>
+      </a>
+
+
+      <a
+        href="nos-produits.html"
+        class="btn btn-outline"
+      >
+        Voir nos produits
+        <span>→</span>
+      </a>
+
     </div>
-  </section>
+
+  </div>
 
 
-  <!-- MAISON -->
-  <section class="section section-light" id="maison">
-    <div class="container house-grid">
-      <div>
-        <p class="section-kicker">La Maison</p>
-        <h2>Une boucherie de quartier,<br>un métier de confiance</h2>
-      </div>
+  <a
+    href="#boutiques"
+    class="scroll-indicator"
+    aria-label="Découvrir les boutiques"
+  >
+    <span></span>
+  </a>
 
-      <div class="house-copy">
+</section>
+
+
+
+<!-- =========================================================
+NOS BOUTIQUES
+========================================================= -->
+
+<section
+  class="section section-light"
+  id="boutiques"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <p class="section-kicker">
+        Nos adresses
+      </p>
+
+
+      <h2>
+        Deux boucheries,<br>
+        une même exigence
+      </h2>
+
+
+      <p>
+        Deux adresses parisiennes,
+        une même attention portée
+        à la qualité des produits
+        et au conseil.
+      </p>
+
+    </div>
+
+
+
+    <div class="shop-grid">
+
+
+      <!-- BILLOT -->
+
+      <article class="shop-card">
+
+        <div class="image-placeholder">
+          Photographie du Billot de Daguerre
+        </div>
+
+
+        <div class="shop-card-content">
+
+          <p class="shop-location">
+            Paris 14ᵉ · Rue Daguerre
+          </p>
+
+
+          <h3>
+            Le Billot de Daguerre
+          </h3>
+
+
+          <p>
+            Une boucherie de quartier
+            où sélection des produits,
+            savoir-faire et conseil
+            occupent une place centrale.
+          </p>
+
+
+          <a
+            href="billot-de-daguerre.html"
+            class="text-link"
+          >
+            Découvrir la boutique
+            <span>→</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- SQUARE -->
+
+      <article class="shop-card">
+
+        <div class="image-placeholder">
+          Photographie de la Boucherie du Square
+        </div>
+
+
+        <div class="shop-card-content">
+
+          <p class="shop-location">
+            Paris 15ᵉ · Rue du Commerce
+          </p>
+
+
+          <h3>
+            Boucherie du Square
+          </h3>
+
+
+          <p>
+            Une seconde adresse parisienne
+            partageant la même exigence
+            de qualité et de conseil.
+          </p>
+
+
+          <a
+            href="boucherie-du-square.html"
+            class="text-link"
+          >
+            Découvrir la boutique
+            <span>→</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+NOS PRODUITS
+========================================================= -->
+
+<section
+  class="section section-dark"
+  id="produits"
+>
+
+  <div class="container">
+
+
+    <div class="section-heading light">
+
+      <p class="section-kicker">
+        Notre sélection
+      </p>
+
+
+      <h2>
+        Des produits sélectionnés<br>
+        avec exigence
+      </h2>
+
+
+      <p>
+        Découvrez les principales familles
+        de produits proposées dans nos boucheries.
+      </p>
+
+    </div>
+
+
+
+    <div class="product-grid">
+
+
+      <article class="product-card">
+
+        <div class="product-image placeholder-dark">
+          Photographie à intégrer
+        </div>
+
+        <h3>
+          Viandes de boucherie
+        </h3>
+
         <p>
-          Cette section présentera l'histoire de la maison, l'équipe,
-          le choix des produits et la manière de travailler.
+          Bœuf · Veau · Agneau · Porc
         </p>
-        <a href="#" class="text-link">Découvrir la Maison <span>→</span></a>
-      </div>
-    </div>
-  </section>
+
+      </article>
 
 
-  <!-- CTA -->
-  <section class="contact-band">
-    <div class="container contact-inner">
-      <div>
-        <p class="section-kicker light-kicker">Une question, une commande ?</p>
-        <h2>Contactez votre boutique</h2>
-      </div>
 
-      <div class="contact-actions">
-        <a href="#" class="btn btn-light">Appeler Le Billot</a>
-        <a href="#" class="btn btn-outline">Appeler le Square</a>
-      </div>
-    </div>
-  </section>
+      <article class="product-card">
 
+        <div class="product-image placeholder-dark">
+          Photographie à intégrer
+        </div>
 
-  <!-- INFOS -->
-  <section class="section section-light">
-    <div class="container">
-      <div class="section-heading">
-        <p class="section-kicker">Informations pratiques</p>
-        <h2>Nos deux boutiques</h2>
-      </div>
+        <h3>
+          Volailles
+        </h3>
 
-      <div class="info-grid">
-        <article class="info-card">
-          <p class="shop-location">Paris 14ᵉ · Rue Daguerre</p>
-          <h3>Le Billot de Daguerre</h3>
-          <p>Adresse complète et horaires à confirmer.</p>
-          <a href="#" class="text-link">Itinéraire <span>→</span></a>
-        </article>
+        <p>
+          Sélection à préciser
+        </p>
 
-        <article class="info-card">
-          <p class="shop-location">Paris 15ᵉ · Rue du Commerce</p>
-          <h3>Boucherie du Square</h3>
-          <p>Adresse complète et horaires à confirmer.</p>
-          <a href="#" class="text-link">Itinéraire <span>→</span></a>
-        </article>
-      </div>
-    </div>
-  </section>
+      </article>
 
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-top">
-      <div>
-        <div class="footer-brand">Le Billot & le Square</div>
-        <p>Deux boucheries artisanales à Paris,<br>dans les 14ᵉ et 15ᵉ arrondissements.</p>
-      </div>
 
-      <nav class="footer-nav">
-        <a href="#boutiques">Nos boutiques</a>
-        <a href="#produits">Nos produits</a>
-        <a href="#savoir-faire">Notre savoir-faire</a>
-        <a href="#maison">La Maison</a>
-      </nav>
+      <article class="product-card">
+
+        <div class="product-image placeholder-dark">
+          Photographie à intégrer
+        </div>
+
+        <h3>
+          Charcuteries & préparations
+        </h3>
+
+        <p>
+          Sélection à préciser
+        </p>
+
+      </article>
+
+
     </div>
 
-    <div class="container footer-bottom">
-      <span>© Le Billot & le Square</span>
-      <div>
-        <a href="#">Mentions légales</a>
-        <a href="#">Confidentialité</a>
-      </div>
+
+    <a
+      href="nos-produits.html"
+      class="btn btn-outline section-button"
+    >
+      Découvrir nos produits
+      <span>→</span>
+    </a>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+LA MAISON
+========================================================= -->
+
+<section class="section section-ivory">
+
+  <div class="container house-grid">
+
+
+    <div>
+
+      <p class="section-kicker">
+        La Maison
+      </p>
+
+
+      <h2>
+        Le goût du métier
+      </h2>
+
     </div>
-  </footer>
+
+
+
+    <div class="house-copy">
+
+      <p>
+        Derrière les deux boutiques,
+        une même approche du métier :
+        sélectionner avec exigence,
+        préparer avec précision
+        et accompagner chaque client
+        dans son choix.
+      </p>
+
+
+      <a
+        href="la-maison.html"
+        class="text-link"
+      >
+        Découvrir la Maison
+        <span>→</span>
+      </a>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+CARTE DE SAISON
+========================================================= -->
+
+<section class="season-section">
+
+  <div class="container season-inner">
+
+
+    <div>
+
+      <p class="section-kicker season-kicker">
+        Au fil des saisons
+      </p>
+
+
+      <h2>
+        Notre carte de saison
+      </h2>
+
+
+      <p>
+        Découvrez les produits,
+        préparations et suggestions
+        proposés actuellement
+        dans nos boutiques.
+      </p>
+
+    </div>
+
+
+    <a
+      href="carte-de-saison.html"
+      class="btn btn-light"
+    >
+      Découvrir la carte
+      <span>→</span>
+    </a>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+INFORMATIONS PRATIQUES
+========================================================= -->
+
+<section class="section section-light">
+
+  <div class="container">
+
+
+    <div class="section-heading">
+
+      <p class="section-kicker">
+        Informations pratiques
+      </p>
+
+
+      <h2>
+        Nos deux boutiques
+      </h2>
+
+    </div>
+
+
+
+    <div class="info-grid">
+
+
+      <article class="info-card">
+
+        <p class="shop-location">
+          Paris 14ᵉ · Rue Daguerre
+        </p>
+
+
+        <h3>
+          Le Billot de Daguerre
+        </h3>
+
+
+        <p>
+          Adresse complète,
+          téléphone et horaires à compléter.
+        </p>
+
+
+        <a
+          href="billot-de-daguerre.html"
+          class="text-link"
+        >
+          Voir la boutique
+          <span>→</span>
+        </a>
+
+      </article>
+
+
+
+      <article class="info-card">
+
+        <p class="shop-location">
+          Paris 15ᵉ · Rue du Commerce
+        </p>
+
+
+        <h3>
+          Boucherie du Square
+        </h3>
+
+
+        <p>
+          Adresse complète,
+          téléphone et horaires à compléter.
+        </p>
+
+
+        <a
+          href="boucherie-du-square.html"
+          class="text-link"
+        >
+          Voir la boutique
+          <span>→</span>
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+  <div class="container footer-top">
+
+
+    <div>
+
+      <div class="footer-brand">
+        Le Billot & le Square
+      </div>
+
+
+      <p>
+        Deux boucheries artisanales à Paris,<br>
+        dans les 14ᵉ et 15ᵉ arrondissements.
+      </p>
+
+    </div>
+
+
+
+    <nav class="footer-nav">
+
+      <a href="billot-de-daguerre.html">
+        Le Billot de Daguerre
+      </a>
+
+      <a href="boucherie-du-square.html">
+        Boucherie du Square
+      </a>
+
+      <a href="nos-produits.html">
+        Nos produits
+      </a>
+
+      <a href="la-maison.html">
+        La Maison
+      </a>
+
+      <a href="carte-de-saison.html">
+        Notre carte de saison
+      </a>
+
+    </nav>
+
+
+  </div>
+
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © Le Billot & le Square
+    </span>
+
+
+    <div>
+
+      <a href="#">
+        Mentions légales
+      </a>
+
+      <a href="#">
+        Confidentialité
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
 
 </body>
 </html>
