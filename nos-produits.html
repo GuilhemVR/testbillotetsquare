@@ -1,1 +1,1241 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Nos produits — Le Billot & le Square</title>
+
+  <meta
+    name="description"
+    content="Découvrez la sélection de produits proposée au Billot de Daguerre et à la Boucherie du Square à Paris."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    /* =========================================================
+       PAGE NOS PRODUITS
+    ========================================================= */
+
+
+    /* HEADER COMMUN */
+
+    .internal-header {
+      background: #0c0b0a;
+      color: white;
+    }
+
+    .internal-header .site-header {
+      border-bottom:
+        1px solid
+        rgba(255,255,255,.16);
+    }
+
+
+    /* =========================================================
+       HERO PRODUITS
+    ========================================================= */
+
+    .products-hero {
+
+      position: relative;
+
+      min-height: 570px;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      background-image:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,.08) 0%,
+          rgba(0,0,0,.12) 45%,
+          rgba(0,0,0,.70) 100%
+        ),
+        url("images/vitrine_boucherie.jpg");
+
+      background-size: cover;
+
+      background-position: center 55%;
+
+      color: white;
+
+    }
+
+
+    .products-hero-content {
+
+      position: relative;
+
+      z-index: 2;
+
+      width:
+        min(
+          1180px,
+          calc(100% - 48px)
+        );
+
+      margin: 0 auto;
+
+      padding-bottom: 70px;
+
+    }
+
+
+    .products-hero .eyebrow {
+
+      margin-bottom: 17px;
+
+      color:
+        rgba(255,255,255,.78);
+
+    }
+
+
+    .products-hero h1 {
+
+      max-width: 760px;
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          72px,
+          8vw,
+          118px
+        );
+
+      font-weight: 400;
+
+      line-height: .88;
+
+      letter-spacing: -.045em;
+
+    }
+
+
+
+    /* =========================================================
+       INTRODUCTION
+    ========================================================= */
+
+    .products-intro {
+
+      padding:
+        105px 0 90px;
+
+      background:
+        #f8f5ef;
+
+    }
+
+
+    .products-intro-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        .8fr 1.2fr;
+
+      gap: 100px;
+
+      align-items: start;
+
+    }
+
+
+    .products-intro h2 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          50px,
+          5vw,
+          76px
+        );
+
+      line-height: .95;
+
+      font-weight: 400;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .products-intro-copy {
+
+      max-width: 650px;
+
+      padding-top: 7px;
+
+    }
+
+
+    .products-intro-copy p {
+
+      margin:
+        0 0 20px;
+
+      color: #665f57;
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
+    }
+
+
+    .products-intro-copy .lead {
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size: 27px;
+
+      line-height: 1.35;
+
+      color: #28231f;
+
+    }
+
+
+
+    /* =========================================================
+       GRANDES FAMILLES
+    ========================================================= */
+
+    .families-section {
+
+      padding:
+        110px 0 120px;
+
+      background:
+        #11100e;
+
+      color: white;
+
+    }
+
+
+    .families-heading {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr .8fr;
+
+      gap: 80px;
+
+      align-items: end;
+
+      margin-bottom: 65px;
+
+    }
+
+
+    .families-heading h2 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          52px,
+          5vw,
+          78px
+        );
+
+      line-height: .94;
+
+      font-weight: 400;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .families-heading > p {
+
+      margin: 0;
+
+      color:
+        rgba(255,255,255,.60);
+
+      line-height: 1.8;
+
+      font-size: 14px;
+
+    }
+
+
+    .families-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(2, 1fr);
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.18);
+
+    }
+
+
+    .family-card {
+
+      min-height: 310px;
+
+      padding:
+        42px 40px 40px 0;
+
+      border-bottom:
+        1px solid
+        rgba(255,255,255,.18);
+
+    }
+
+
+    .family-card:nth-child(odd) {
+
+      padding-right: 55px;
+
+      border-right:
+        1px solid
+        rgba(255,255,255,.18);
+
+    }
+
+
+    .family-card:nth-child(even) {
+
+      padding-left: 55px;
+
+    }
+
+
+    .family-number {
+
+      display: block;
+
+      margin-bottom: 55px;
+
+      color:
+        rgba(255,255,255,.38);
+
+      font-size: 10px;
+
+      letter-spacing: .18em;
+
+    }
+
+
+    .family-card h3 {
+
+      margin:
+        0 0 16px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          38px,
+          4vw,
+          52px
+        );
+
+      font-weight: 400;
+
+      line-height: 1;
+
+    }
+
+
+    .family-card p {
+
+      max-width: 470px;
+
+      margin: 0;
+
+      color:
+        rgba(255,255,255,.59);
+
+      font-size: 13px;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =========================================================
+       NOTRE SELECTION
+    ========================================================= */
+
+    .selection-section {
+
+      padding:
+        120px 0;
+
+      background:
+        #eee9e0;
+
+    }
+
+
+    .selection-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1.1fr .9fr;
+
+      gap: 100px;
+
+      align-items: center;
+
+    }
+
+
+    .selection-visual {
+
+      min-height: 590px;
+
+      background-image:
+        url("images/maturation_boeuf.jpg");
+
+      background-size: cover;
+
+      background-position: center;
+
+    }
+
+
+    .selection-content {
+
+      max-width: 540px;
+
+    }
+
+
+    .selection-content h2 {
+
+      margin:
+        0 0 30px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          50px,
+          5vw,
+          76px
+        );
+
+      font-weight: 400;
+
+      line-height: .94;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .selection-content p {
+
+      margin:
+        0 0 19px;
+
+      color:
+        #665f57;
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
+    }
+
+
+
+    /* =========================================================
+       LE CONSEIL DU BOUCHER
+    ========================================================= */
+
+    .advice-section {
+
+      padding:
+        115px 0;
+
+      background:
+        #f8f5ef;
+
+    }
+
+
+    .advice-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        .8fr 1.2fr;
+
+      gap: 100px;
+
+      align-items: start;
+
+    }
+
+
+    .advice-title h2 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          50px,
+          5vw,
+          75px
+        );
+
+      font-weight: 400;
+
+      line-height: .94;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .advice-copy {
+
+      max-width: 650px;
+
+      padding-top: 5px;
+
+    }
+
+
+    .advice-copy .lead {
+
+      margin:
+        0 0 25px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size: 28px;
+
+      line-height: 1.35;
+
+      color: #28231f;
+
+    }
+
+
+    .advice-copy p {
+
+      color: #665f57;
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
+    }
+
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media
+    (max-width: 900px) {
+
+
+      .products-hero {
+
+        min-height: 480px;
+
+        background-position:
+          center center;
+
+      }
+
+
+      .products-intro-grid,
+      .families-heading,
+      .selection-grid,
+      .advice-grid {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 45px;
+
+      }
+
+
+      .families-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .family-card,
+      .family-card:nth-child(odd),
+      .family-card:nth-child(even) {
+
+        min-height: auto;
+
+        padding:
+          38px 0;
+
+        border-right: 0;
+
+      }
+
+
+      .family-number {
+
+        margin-bottom:
+          30px;
+
+      }
+
+
+      .selection-visual {
+
+        min-height:
+          430px;
+
+      }
+
+    }
+
+
+
+    @media
+    (max-width: 600px) {
+
+
+      .products-hero {
+
+        min-height: 410px;
+
+      }
+
+
+      .products-hero-content {
+
+        width:
+          calc(100% - 32px);
+
+        padding-bottom:
+          45px;
+
+      }
+
+
+      .products-hero h1 {
+
+        font-size:
+          clamp(
+            58px,
+            18vw,
+            80px
+          );
+
+      }
+
+
+      .products-intro,
+      .families-section,
+      .selection-section,
+      .advice-section {
+
+        padding:
+          75px 0;
+
+      }
+
+
+      .selection-visual {
+
+        min-height:
+          330px;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<div class="internal-header">
+
+  <header class="site-header">
+
+
+    <a
+      href="index.html"
+      class="brand"
+    >
+
+      <span class="brand-main">
+        Le Billot & le Square
+      </span>
+
+      <span class="brand-sub">
+        Boucheries artisanales · Paris
+      </span>
+
+    </a>
+
+
+    <nav class="main-nav">
+
+
+      <div class="nav-dropdown">
+
+        <button class="nav-dropdown-button">
+
+          Nos boutiques
+
+          <span class="nav-arrow">
+            ⌄
+          </span>
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="billot-de-daguerre.html">
+            Le Billot de Daguerre
+          </a>
+
+          <a href="boucherie-du-square.html">
+            Boucherie du Square
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="nos-produits.html">
+        Nos produits
+      </a>
+
+
+      <a href="la-maison.html">
+        La Maison
+      </a>
+
+
+      <a href="carte-de-saison.html">
+        Notre carte de saison
+      </a>
+
+
+    </nav>
+
+
+    <a
+      href="nos-produits.html"
+      class="header-cta"
+    >
+
+      Voir nos produits
+
+      <span>→</span>
+
+    </a>
+
+
+  </header>
+
+</div>
+
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="products-hero">
+
+  <div class="products-hero-content">
+
+    <p class="eyebrow">
+      Le Billot & le Square
+    </p>
+
+    <h1>
+      Nos produits
+    </h1>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="products-intro">
+
+  <div class="container products-intro-grid">
+
+
+    <div>
+
+      <p class="section-kicker">
+        Notre sélection
+      </p>
+
+      <h2>
+        Le goût<br>
+        des beaux produits
+      </h2>
+
+    </div>
+
+
+    <div class="products-intro-copy">
+
+      <p class="lead">
+
+        Une sélection pensée pour
+        vous proposer des produits
+        adaptés aussi bien au quotidien
+        qu’aux repas d’exception.
+
+      </p>
+
+      <p>
+
+        Dans nos deux boutiques,
+        les équipes vous accompagnent
+        dans le choix des morceaux,
+        leur préparation et leur cuisson.
+
+      </p>
+
+      <p>
+
+        Les familles de produits présentées
+        sur cette page seront précisées
+        avec les équipes des boutiques.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FAMILLES DE PRODUITS
+========================================================= -->
+
+<section class="families-section">
+
+  <div class="container">
+
+
+    <div class="families-heading">
+
+
+      <div>
+
+        <p class="section-kicker">
+          En boutique
+        </p>
+
+        <h2>
+          Une offre pour<br>
+          toutes les envies
+        </h2>
+
+      </div>
+
+
+      <p>
+
+        Cette première organisation
+        sera ajustée en fonction
+        de la sélection réellement proposée
+        au Billot de Daguerre
+        et à la Boucherie du Square.
+
+      </p>
+
+
+    </div>
+
+
+
+    <div class="families-grid">
+
+
+      <article class="family-card">
+
+        <span class="family-number">
+          01
+        </span>
+
+        <h3>
+          Bœuf
+        </h3>
+
+        <p>
+
+          Pièces à griller,
+          à rôtir ou à mijoter,
+          avec une sélection
+          à préciser avec les équipes.
+
+        </p>
+
+      </article>
+
+
+
+      <article class="family-card">
+
+        <span class="family-number">
+          02
+        </span>
+
+        <h3>
+          Veau & agneau
+        </h3>
+
+        <p>
+
+          Une sélection de morceaux
+          adaptée aux recettes du quotidien
+          comme aux grandes occasions.
+
+        </p>
+
+      </article>
+
+
+
+      <article class="family-card">
+
+        <span class="family-number">
+          03
+        </span>
+
+        <h3>
+          Porc & charcuterie
+        </h3>
+
+        <p>
+
+          Viandes, charcuteries
+          et spécialités proposées
+          selon la sélection des boutiques.
+
+        </p>
+
+      </article>
+
+
+
+      <article class="family-card">
+
+        <span class="family-number">
+          04
+        </span>
+
+        <h3>
+          Volailles & préparations
+        </h3>
+
+        <p>
+
+          Volailles et préparations bouchères
+          pour varier les repas
+          et faciliter la cuisine au quotidien.
+
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     NOTRE SELECTION
+========================================================= -->
+
+<section class="selection-section">
+
+  <div class="container selection-grid">
+
+
+    <div
+      class="selection-visual"
+      aria-label="Viandes maturées"
+    >
+    </div>
+
+
+    <div class="selection-content">
+
+      <p class="section-kicker">
+        Notre sélection
+      </p>
+
+      <h2>
+        Choisir avec exigence
+      </h2>
+
+      <p>
+
+        La qualité d’une viande
+        commence par sa sélection.
+
+        Origine, élevage, régularité,
+        maturité et qualité du produit :
+        les critères mis en avant ici
+        seront précisés avec Alain
+        afin de présenter fidèlement
+        le travail des deux boutiques.
+
+      </p>
+
+      <p>
+
+        L’objectif est simple :
+        proposer le bon produit,
+        au bon moment,
+        et vous accompagner
+        dans votre choix.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONSEIL
+========================================================= -->
+
+<section class="advice-section">
+
+  <div class="container advice-grid">
+
+
+    <div class="advice-title">
+
+      <p class="section-kicker">
+        En boutique
+      </p>
+
+      <h2>
+        Le conseil<br>
+        fait partie du métier
+      </h2>
+
+    </div>
+
+
+    <div class="advice-copy">
+
+      <p class="lead">
+
+        Un bon morceau,
+        c’est aussi celui qui correspond
+        à votre recette, à vos envies
+        et au nombre de convives.
+
+      </p>
+
+      <p>
+
+        Les équipes du Billot de Daguerre
+        et de la Boucherie du Square
+        sont là pour vous orienter
+        dans votre choix et vous conseiller
+        sur la préparation,
+        les quantités et la cuisson.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+  <div class="container footer-top">
+
+
+    <div>
+
+      <div class="footer-brand">
+        Le Billot & le Square
+      </div>
+
+      <p>
+
+        Deux boucheries artisanales à Paris,<br>
+        dans les 14ᵉ et 15ᵉ arrondissements.
+
+      </p>
+
+    </div>
+
+
+    <nav class="footer-nav">
+
+      <a href="billot-de-daguerre.html">
+        Le Billot de Daguerre
+      </a>
+
+      <a href="boucherie-du-square.html">
+        Boucherie du Square
+      </a>
+
+      <a href="nos-produits.html">
+        Nos produits
+      </a>
+
+      <a href="la-maison.html">
+        La Maison
+      </a>
+
+      <a href="carte-de-saison.html">
+        Notre carte de saison
+      </a>
+
+    </nav>
+
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © Le Billot & le Square
+    </span>
+
+    <div>
+
+      <a href="#">
+        Mentions légales
+      </a>
+
+      <a href="#">
+        Confidentialité
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
