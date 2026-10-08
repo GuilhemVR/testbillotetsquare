@@ -32,7 +32,12 @@
 
   <link rel="stylesheet" href="style.css">
 
+
   <style>
+
+    /* =========================================================
+       PAGE SQUARE
+    ========================================================= */
 
     .internal-header {
       background: #0c0b0a;
@@ -40,10 +45,66 @@
     }
 
     .internal-header .site-header {
-      border-bottom: 1px solid rgba(255,255,255,.16);
+      border-bottom:
+        1px solid
+        rgba(255,255,255,.16);
     }
 
-    /* PHOTO D'OUVERTURE */
+
+    /* =========================================================
+       MENU HAMBURGER MOBILE
+    ========================================================= */
+
+    .menu-toggle {
+      display: none;
+      width: 46px;
+      height: 46px;
+      padding: 0;
+      border: 1px solid rgba(255,255,255,.45);
+      background: rgba(0,0,0,.12);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
+      position: relative;
+      z-index: 1002;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 21px;
+      height: 1.5px;
+      background: white;
+      transition:
+        transform .25s ease,
+        opacity .25s ease;
+    }
+
+    .menu-toggle.is-open span:nth-child(1) {
+      transform:
+        translateY(6.5px)
+        rotate(45deg);
+    }
+
+    .menu-toggle.is-open span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle.is-open span:nth-child(3) {
+      transform:
+        translateY(-6.5px)
+        rotate(-45deg);
+    }
+
+    .mobile-menu {
+      display: none;
+    }
+
+
+    /* =========================================================
+       PHOTO D'OUVERTURE
+    ========================================================= */
 
     .shop-hero {
       position: relative;
@@ -61,7 +122,10 @@
       background-position: center top;
     }
 
-    /* PRESENTATION */
+
+    /* =========================================================
+       PRESENTATION
+    ========================================================= */
 
     .shop-intro {
       padding: 105px 0;
@@ -111,7 +175,10 @@
       color: #514b45;
     }
 
-    /* INFOS PRATIQUES */
+
+    /* =========================================================
+       INFOS PRATIQUES
+    ========================================================= */
 
     .shop-practical {
       padding: 34px 0 0;
@@ -164,7 +231,10 @@
       color: #181512;
     }
 
-    /* QUOTIDIEN */
+
+    /* =========================================================
+       QUOTIDIEN
+    ========================================================= */
 
     .daily-section {
       padding: 115px 0;
@@ -180,7 +250,6 @@
 
     .daily-photo {
       min-height: 590px;
-
       background: #d8d1c7;
 
       background-image:
@@ -218,7 +287,10 @@
       margin-top: 28px;
     }
 
-    /* AUTRE BOUTIQUE */
+
+    /* =========================================================
+       AUTRE BOUTIQUE
+    ========================================================= */
 
     .other-shop {
       padding: 85px 0;
@@ -252,7 +324,157 @@
       font-weight: 400;
     }
 
-    /* MOBILE */
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media (max-width: 1100px) {
+
+      .site-header {
+        grid-template-columns:
+          1fr auto;
+      }
+
+      .main-nav,
+      .header-cta {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      .mobile-menu {
+        position: fixed;
+        inset: 0;
+        z-index: 1000;
+
+        display: flex;
+        flex-direction: column;
+
+        padding:
+          120px 28px 42px;
+
+        background:
+          rgba(12,11,10,.985);
+
+        color: white;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transform:
+          translateY(-12px);
+
+        transition:
+          opacity .25s ease,
+          visibility .25s ease,
+          transform .25s ease;
+
+        overflow-y: auto;
+      }
+
+      .mobile-menu.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
+
+      .mobile-menu-inner {
+        width:
+          min(
+            100%,
+            620px
+          );
+
+        margin:
+          0 auto;
+      }
+
+      .mobile-menu-label {
+        margin:
+          0 0 16px;
+
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: .25em;
+
+        color:
+          rgba(255,255,255,.42);
+      }
+
+      .mobile-menu-group {
+        padding:
+          25px 0;
+
+        border-bottom:
+          1px solid
+          rgba(255,255,255,.14);
+      }
+
+      .mobile-menu-main-link {
+        display: block;
+
+        padding:
+          9px 0;
+
+        font-family:
+          "Cormorant Garamond",
+          Georgia,
+          serif;
+
+        font-size:
+          clamp(
+            35px,
+            8vw,
+            48px
+          );
+
+        line-height: 1;
+        text-decoration: none;
+      }
+
+      .mobile-submenu {
+        display: flex;
+        flex-direction: column;
+
+        gap: 13px;
+
+        margin-top: 20px;
+        padding-left: 17px;
+
+        border-left:
+          1px solid
+          rgba(255,255,255,.25);
+      }
+
+      .mobile-submenu a {
+        color:
+          rgba(255,255,255,.72);
+
+        font-size: 14px;
+        line-height: 1.5;
+        text-decoration: none;
+      }
+
+      .mobile-menu-footer {
+        margin-top: 45px;
+
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: .19em;
+
+        color:
+          rgba(255,255,255,.36);
+      }
+
+      body.menu-open {
+        overflow: hidden;
+      }
+
+    }
+
 
     @media (max-width: 850px) {
 
@@ -294,11 +516,32 @@
 
     }
 
+
+    @media (max-width: 600px) {
+
+      .menu-toggle {
+        width: 42px;
+        height: 42px;
+      }
+
+      .mobile-menu {
+        padding:
+          105px 20px 36px;
+      }
+
+    }
+
   </style>
 
 </head>
 
+
 <body>
+
+
+<!-- =========================================================
+HEADER
+========================================================= -->
 
 <div class="internal-header">
 
@@ -315,6 +558,9 @@
       </span>
 
     </a>
+
+
+    <!-- NAVIGATION DESKTOP -->
 
     <nav class="main-nav">
 
@@ -339,6 +585,7 @@
 
       </div>
 
+
       <a href="nos-produits.html">
         Nos produits
       </a>
@@ -353,6 +600,7 @@
 
     </nav>
 
+
     <a
       href="nos-produits.html"
       class="header-cta"
@@ -361,10 +609,112 @@
       <span>→</span>
     </a>
 
+
+    <!-- BOUTON HAMBURGER MOBILE -->
+
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Ouvrir le menu"
+      aria-expanded="false"
+      aria-controls="mobileMenu"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
   </header>
 
 </div>
 
+
+
+<!-- =========================================================
+MENU MOBILE
+========================================================= -->
+
+<nav
+  class="mobile-menu"
+  id="mobileMenu"
+  aria-label="Navigation mobile"
+>
+
+  <div class="mobile-menu-inner">
+
+
+    <div class="mobile-menu-group">
+
+      <p class="mobile-menu-label">
+        Nos boutiques
+      </p>
+
+      <div class="mobile-submenu">
+
+        <a href="billot-de-daguerre.html">
+          Le Billot de Daguerre
+        </a>
+
+        <a href="boucherie-du-square.html">
+          Boucherie du Square
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="mobile-menu-group">
+
+      <a
+        href="nos-produits.html"
+        class="mobile-menu-main-link"
+      >
+        Nos produits
+      </a>
+
+    </div>
+
+
+    <div class="mobile-menu-group">
+
+      <a
+        href="la-maison.html"
+        class="mobile-menu-main-link"
+      >
+        La Maison
+      </a>
+
+    </div>
+
+
+    <div class="mobile-menu-group">
+
+      <a
+        href="carte-de-saison.html"
+        class="mobile-menu-main-link"
+      >
+        Notre carte de saison
+      </a>
+
+    </div>
+
+
+    <div class="mobile-menu-footer">
+      Le Billot & le Square · Paris
+    </div>
+
+  </div>
+
+</nav>
+
+
+
+<!-- =========================================================
+PHOTO D'OUVERTURE
+========================================================= -->
 
 <section
   class="shop-hero"
@@ -373,9 +723,15 @@
 </section>
 
 
+
+<!-- =========================================================
+PRESENTATION
+========================================================= -->
+
 <section class="shop-intro">
 
   <div class="container shop-intro-grid">
+
 
     <div>
 
@@ -402,6 +758,7 @@
 
 
     <aside class="shop-practical">
+
 
       <div class="practical-item">
 
@@ -469,9 +826,15 @@
 </section>
 
 
+
+<!-- =========================================================
+LE CONSEIL
+========================================================= -->
+
 <section class="daily-section">
 
   <div class="container daily-grid">
+
 
     <div
       class="daily-photo"
@@ -491,6 +854,7 @@
         au cœur du quartier
       </h2>
 
+
       <p>
 
         À la Boucherie du Square,
@@ -505,6 +869,7 @@
         à vos repas.
 
       </p>
+
 
       <p>
 
@@ -531,9 +896,15 @@
 </section>
 
 
+
+<!-- =========================================================
+AUTRE BOUTIQUE
+========================================================= -->
+
 <section class="other-shop">
 
   <div class="container other-shop-inner">
+
 
     <div>
 
@@ -561,9 +932,15 @@
 </section>
 
 
+
+<!-- =========================================================
+FOOTER
+========================================================= -->
+
 <footer class="footer">
 
   <div class="container footer-top">
+
 
     <div>
 
@@ -627,6 +1004,136 @@
   </div>
 
 </footer>
+
+
+
+<!-- =========================================================
+JAVASCRIPT MENU MOBILE
+========================================================= -->
+
+<script>
+
+  const menuToggle =
+    document.getElementById("menuToggle");
+
+  const mobileMenu =
+    document.getElementById("mobileMenu");
+
+
+  function closeMobileMenu() {
+
+    menuToggle.classList.remove("is-open");
+
+    mobileMenu.classList.remove("is-open");
+
+    document.body.classList.remove("menu-open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+    menuToggle.setAttribute(
+      "aria-label",
+      "Ouvrir le menu"
+    );
+
+  }
+
+
+  function openMobileMenu() {
+
+    menuToggle.classList.add("is-open");
+
+    mobileMenu.classList.add("is-open");
+
+    document.body.classList.add("menu-open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      "true"
+    );
+
+    menuToggle.setAttribute(
+      "aria-label",
+      "Fermer le menu"
+    );
+
+  }
+
+
+  menuToggle.addEventListener(
+    "click",
+    function () {
+
+      const isOpen =
+        mobileMenu.classList.contains(
+          "is-open"
+        );
+
+      if (isOpen) {
+
+        closeMobileMenu();
+
+      } else {
+
+        openMobileMenu();
+
+      }
+
+    }
+  );
+
+
+  mobileMenu
+    .querySelectorAll("a")
+    .forEach(function(link) {
+
+      link.addEventListener(
+        "click",
+        closeMobileMenu
+      );
+
+    });
+
+
+  document.addEventListener(
+    "keydown",
+    function(event) {
+
+      if (
+        event.key === "Escape"
+        &&
+        mobileMenu.classList.contains(
+          "is-open"
+        )
+      ) {
+
+        closeMobileMenu();
+
+      }
+
+    }
+  );
+
+
+  window.addEventListener(
+    "resize",
+    function() {
+
+      if (
+        window.innerWidth > 1100
+      ) {
+
+        closeMobileMenu();
+
+      }
+
+    }
+  );
+
+</script>
+
 
 </body>
 
