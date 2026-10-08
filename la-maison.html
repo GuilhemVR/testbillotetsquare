@@ -1,1 +1,1618 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>La Maison — Le Billot & le Square</title>
+
+  <meta
+    name="description"
+    content="Découvrez l’histoire, la vision et les équipes du Billot de Daguerre et de la Boucherie du Square à Paris."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    /* =========================================================
+       PAGE LA MAISON
+    ========================================================= */
+
+
+    .internal-header {
+      background: #0c0b0a;
+      color: white;
+    }
+
+    .internal-header .site-header {
+      border-bottom: 1px solid rgba(255,255,255,.16);
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================= */
+
+    .house-hero {
+
+      min-height: 520px;
+
+      display: flex;
+
+      align-items: flex-end;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(0,0,0,.12),
+          rgba(0,0,0,.65)
+        ),
+        url("images/maison-hero.jpg");
+
+      background-size: cover;
+
+      background-position: center;
+
+      color: white;
+
+    }
+
+
+    .house-hero-content {
+
+      width:
+        min(
+          1180px,
+          calc(100% - 48px)
+        );
+
+      margin: 0 auto;
+
+      padding-bottom: 70px;
+
+    }
+
+
+    .house-hero h1 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          72px,
+          8vw,
+          118px
+        );
+
+      line-height: .88;
+
+      font-weight: 400;
+
+      letter-spacing: -.045em;
+
+    }
+
+
+    .house-hero-subtitle {
+
+      max-width: 680px;
+
+      margin-top: 25px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size: 30px;
+
+      line-height: 1.25;
+
+      color: rgba(255,255,255,.88);
+
+    }
+
+
+
+    /* =========================================================
+       INTRODUCTION
+    ========================================================= */
+
+    .house-intro {
+
+      padding: 110px 0;
+
+      background: #f8f5ef;
+
+    }
+
+
+    .house-intro-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        .8fr
+        1.2fr;
+
+      gap: 100px;
+
+      align-items: start;
+
+    }
+
+
+    .house-intro h2 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          50px,
+          5vw,
+          78px
+        );
+
+      line-height: .94;
+
+      font-weight: 400;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .house-intro-copy {
+
+      max-width: 680px;
+
+    }
+
+
+    .house-intro-copy .lead {
+
+      margin:
+        0 0 26px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size: 28px;
+
+      line-height: 1.35;
+
+      color: #28231f;
+
+    }
+
+
+    .house-intro-copy p {
+
+      color: #665f57;
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
+    }
+
+
+
+    /* =========================================================
+       ALAIN VANG
+    ========================================================= */
+
+    .owner-section {
+
+      padding: 120px 0;
+
+      background: #eee9e0;
+
+    }
+
+
+    .owner-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap: 95px;
+
+      align-items: center;
+
+    }
+
+
+    .owner-photo {
+
+      min-height: 640px;
+
+      background:
+        #d8d1c7;
+
+      background-image:
+        url("images/alain-vang.jpg");
+
+      background-size: cover;
+
+      background-position: center;
+
+    }
+
+
+    .owner-content {
+
+      max-width: 560px;
+
+    }
+
+
+    .owner-content h2 {
+
+      margin:
+        0 0 30px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          50px,
+          5vw,
+          76px
+        );
+
+      line-height: .94;
+
+      font-weight: 400;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .owner-content p {
+
+      margin:
+        0 0 18px;
+
+      color: #665f57;
+
+      font-size: 15px;
+
+      line-height: 1.9;
+
+    }
+
+
+
+    /* =========================================================
+       HISTOIRE
+    ========================================================= */
+
+    .history-section {
+
+      padding: 120px 0;
+
+      background: #11100e;
+
+      color: white;
+
+    }
+
+
+    .history-heading {
+
+      max-width: 780px;
+
+      margin-bottom: 70px;
+
+    }
+
+
+    .history-heading h2 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          52px,
+          5vw,
+          80px
+        );
+
+      line-height: .94;
+
+      font-weight: 400;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .history-heading > p:last-child {
+
+      margin-top: 25px;
+
+      color: rgba(255,255,255,.58);
+
+      line-height: 1.8;
+
+    }
+
+
+    .timeline {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.18);
+
+    }
+
+
+    .timeline-item {
+
+      padding:
+        40px 42px 20px 0;
+
+      border-right:
+        1px solid
+        rgba(255,255,255,.18);
+
+    }
+
+
+    .timeline-item:not(:first-child) {
+
+      padding-left: 42px;
+
+    }
+
+
+    .timeline-item:last-child {
+
+      border-right: 0;
+
+    }
+
+
+    .timeline-date {
+
+      display: block;
+
+      margin-bottom: 40px;
+
+      color:
+        rgba(255,255,255,.42);
+
+      font-size: 10px;
+
+      letter-spacing: .18em;
+
+      text-transform: uppercase;
+
+    }
+
+
+    .timeline-item h3 {
+
+      margin:
+        0 0 15px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size: 36px;
+
+      font-weight: 400;
+
+    }
+
+
+    .timeline-item p {
+
+      margin: 0;
+
+      color:
+        rgba(255,255,255,.58);
+
+      line-height: 1.8;
+
+      font-size: 13px;
+
+    }
+
+
+
+    /* =========================================================
+       EQUIPES
+    ========================================================= */
+
+    .teams-section {
+
+      padding: 120px 0;
+
+      background: #f8f5ef;
+
+    }
+
+
+    .teams-heading {
+
+      max-width: 740px;
+
+      margin-bottom: 70px;
+
+    }
+
+
+    .teams-heading h2 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          50px,
+          5vw,
+          78px
+        );
+
+      line-height: .94;
+
+      font-weight: 400;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .teams-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        1fr;
+
+      gap: 28px;
+
+    }
+
+
+    .team-card {
+
+      background: white;
+
+    }
+
+
+    .team-photo {
+
+      min-height: 440px;
+
+      background:
+        #d8d1c7;
+
+      background-size: cover;
+
+      background-position: center;
+
+    }
+
+
+    .team-photo-billot {
+
+      background-image:
+        url("images/equipe-billot.jpg");
+
+    }
+
+
+    .team-photo-square {
+
+      background-image:
+        url("images/equipe-square.jpg");
+
+    }
+
+
+    .team-content {
+
+      padding:
+        36px 36px 40px;
+
+    }
+
+
+    .team-location {
+
+      margin:
+        0 0 12px;
+
+      font-size: 10px;
+
+      text-transform: uppercase;
+
+      letter-spacing: .18em;
+
+      color: #81796f;
+
+    }
+
+
+    .team-content h3 {
+
+      margin:
+        0 0 16px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size: 40px;
+
+      font-weight: 400;
+
+      line-height: 1;
+
+    }
+
+
+    .team-content p {
+
+      margin: 0;
+
+      color: #665f57;
+
+      font-size: 14px;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =========================================================
+       MANIERE DE TRAVAILLER
+    ========================================================= */
+
+    .values-section {
+
+      padding: 115px 0;
+
+      background: #eee9e0;
+
+    }
+
+
+    .values-heading {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr .8fr;
+
+      gap: 80px;
+
+      align-items: end;
+
+      margin-bottom: 70px;
+
+    }
+
+
+    .values-heading h2 {
+
+      margin: 0;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size:
+        clamp(
+          50px,
+          5vw,
+          76px
+        );
+
+      line-height: .94;
+
+      font-weight: 400;
+
+      letter-spacing: -.035em;
+
+    }
+
+
+    .values-heading > p {
+
+      margin: 0;
+
+      color: #665f57;
+
+      font-size: 14px;
+
+      line-height: 1.8;
+
+    }
+
+
+    .values-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      border-top:
+        1px solid
+        rgba(24,21,18,.16);
+
+    }
+
+
+    .value-item {
+
+      padding:
+        35px 28px 15px 0;
+
+      border-right:
+        1px solid
+        rgba(24,21,18,.16);
+
+    }
+
+
+    .value-item:not(:first-child) {
+
+      padding-left: 28px;
+
+    }
+
+
+    .value-item:last-child {
+
+      border-right: 0;
+
+    }
+
+
+    .value-number {
+
+      display: block;
+
+      margin-bottom: 35px;
+
+      color: #81796f;
+
+      font-size: 10px;
+
+      letter-spacing: .17em;
+
+    }
+
+
+    .value-item h3 {
+
+      margin:
+        0 0 14px;
+
+      font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+      font-size: 34px;
+
+      font-weight: 400;
+
+    }
+
+
+    .value-item p {
+
+      margin: 0;
+
+      color: #665f57;
+
+      font-size: 13px;
+
+      line-height: 1.8;
+
+    }
+
+
+
+    /* =========================================================
+       MOBILE
+    ========================================================= */
+
+    @media
+    (max-width: 900px) {
+
+
+      .house-intro-grid,
+      .owner-grid,
+      .values-heading {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 45px;
+
+      }
+
+
+      .timeline {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .timeline-item,
+      .timeline-item:not(:first-child) {
+
+        padding:
+          35px 0;
+
+        border-right: 0;
+
+        border-bottom:
+          1px solid
+          rgba(255,255,255,.18);
+
+      }
+
+
+      .teams-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .values-grid {
+
+        grid-template-columns:
+          1fr 1fr;
+
+      }
+
+
+      .value-item:nth-child(2) {
+
+        border-right: 0;
+
+      }
+
+
+      .owner-photo {
+
+        min-height: 480px;
+
+      }
+
+    }
+
+
+
+    @media
+    (max-width: 600px) {
+
+
+      .house-hero {
+
+        min-height: 430px;
+
+      }
+
+
+      .house-hero-content {
+
+        width:
+          calc(100% - 32px);
+
+        padding-bottom: 45px;
+
+      }
+
+
+      .house-hero h1 {
+
+        font-size:
+          clamp(
+            60px,
+            18vw,
+            84px
+          );
+
+      }
+
+
+      .house-hero-subtitle {
+
+        font-size: 23px;
+
+      }
+
+
+      .house-intro,
+      .owner-section,
+      .history-section,
+      .teams-section,
+      .values-section {
+
+        padding:
+          75px 0;
+
+      }
+
+
+      .owner-photo,
+      .team-photo {
+
+        min-height:
+          340px;
+
+      }
+
+
+      .values-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .value-item,
+      .value-item:not(:first-child) {
+
+        padding:
+          28px 0;
+
+        border-right: 0;
+
+        border-bottom:
+          1px solid
+          rgba(24,21,18,.16);
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+HEADER
+========================================================= -->
+
+<div class="internal-header">
+
+  <header class="site-header">
+
+
+    <a
+      href="index.html"
+      class="brand"
+    >
+
+      <span class="brand-main">
+        Le Billot & le Square
+      </span>
+
+      <span class="brand-sub">
+        Boucheries artisanales · Paris
+      </span>
+
+    </a>
+
+
+    <nav class="main-nav">
+
+
+      <div class="nav-dropdown">
+
+        <button class="nav-dropdown-button">
+
+          Nos boutiques
+
+          <span class="nav-arrow">
+            ⌄
+          </span>
+
+        </button>
+
+
+        <div class="dropdown-menu">
+
+          <a href="billot-de-daguerre.html">
+            Le Billot de Daguerre
+          </a>
+
+          <a href="boucherie-du-square.html">
+            Boucherie du Square
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <a href="nos-produits.html">
+        Nos produits
+      </a>
+
+
+      <a href="la-maison.html">
+        La Maison
+      </a>
+
+
+      <a href="carte-de-saison.html">
+        Notre carte de saison
+      </a>
+
+
+    </nav>
+
+
+    <a
+      href="nos-produits.html"
+      class="header-cta"
+    >
+
+      Voir nos produits
+
+      <span>→</span>
+
+    </a>
+
+
+  </header>
+
+</div>
+
+
+
+<!-- =========================================================
+HERO
+========================================================= -->
+
+<section class="house-hero">
+
+  <div class="house-hero-content">
+
+    <p class="eyebrow">
+      Le Billot & le Square
+    </p>
+
+    <h1>
+      La Maison
+    </h1>
+
+    <p class="house-hero-subtitle">
+      Deux boutiques, une même vision du métier.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+INTRODUCTION
+========================================================= -->
+
+<section class="house-intro">
+
+  <div class="container house-intro-grid">
+
+
+    <div>
+
+      <p class="section-kicker">
+        La Maison
+      </p>
+
+      <h2>
+        Deux adresses,<br>
+        une même exigence
+      </h2>
+
+    </div>
+
+
+    <div class="house-intro-copy">
+
+      <p class="lead">
+
+        Le Billot de Daguerre
+        et la Boucherie du Square
+        partagent une même approche
+        du métier.
+
+      </p>
+
+      <p>
+
+        Deux quartiers, deux équipes,
+        mais une même volonté :
+        proposer des produits sélectionnés
+        avec soin, travailler avec précision
+        et accompagner chaque client
+        avec attention.
+
+      </p>
+
+      <p>
+
+        L’histoire détaillée de la Maison,
+        son développement et les particularités
+        des deux établissements
+        seront précisés avec Alain.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+ALAIN VANG
+========================================================= -->
+
+<section class="owner-section">
+
+  <div class="container owner-grid">
+
+
+    <div
+      class="owner-photo"
+      aria-label="Portrait d'Alain Vang"
+    >
+    </div>
+
+
+    <div class="owner-content">
+
+      <p class="section-kicker">
+        La Maison
+      </p>
+
+      <h2>
+        Alain Vang,<br>
+        au cœur de la Maison
+      </h2>
+
+      <p>
+
+        À la tête du Billot de Daguerre
+        et de la Boucherie du Square,
+        Alain Vang porte une vision
+        commune aux deux établissements.
+
+      </p>
+
+      <p>
+
+        Son parcours, son expérience
+        et sa manière d’envisager
+        le métier de boucher
+        seront développés ici
+        à partir de son histoire personnelle
+        et de celle des deux boutiques.
+
+      </p>
+
+      <p>
+
+        Cette partie pourra également
+        permettre d’expliquer
+        ce qui relie les deux adresses :
+        le choix des produits,
+        le goût du métier,
+        le service et la relation
+        avec les clients.
+
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+HISTOIRE
+========================================================= -->
+
+<section class="history-section">
+
+  <div class="container">
+
+
+    <div class="history-heading">
+
+      <p class="section-kicker">
+        Notre histoire
+      </p>
+
+      <h2>
+        Une Maison qui s’écrit<br>
+        au fil des années
+      </h2>
+
+      <p>
+
+        Cette chronologie sera complétée
+        lorsque nous disposerons
+        des dates et événements importants
+        de l’histoire des deux boutiques.
+
+      </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+      <article class="timeline-item">
+
+        <span class="timeline-date">
+          Année à préciser
+        </span>
+
+        <h3>
+          Les débuts
+        </h3>
+
+        <p>
+
+          Première étape du parcours
+          d’Alain et origine
+          de l’histoire de la Maison.
+
+        </p>
+
+      </article>
+
+
+      <article class="timeline-item">
+
+        <span class="timeline-date">
+          Année à préciser
+        </span>
+
+        <h3>
+          Le Billot de Daguerre
+        </h3>
+
+        <p>
+
+          Une étape importante
+          de l’histoire de la Maison,
+          à documenter avec Alain.
+
+        </p>
+
+      </article>
+
+
+      <article class="timeline-item">
+
+        <span class="timeline-date">
+          Année à préciser
+        </span>
+
+        <h3>
+          Boucherie du Square
+        </h3>
+
+        <p>
+
+          Une seconde adresse
+          qui prolonge la même vision
+          dans le 15ᵉ arrondissement.
+
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+EQUIPES
+========================================================= -->
+
+<section class="teams-section">
+
+  <div class="container">
+
+
+    <div class="teams-heading">
+
+      <p class="section-kicker">
+        Les équipes
+      </p>
+
+      <h2>
+        Deux quartiers,<br>
+        des équipes au quotidien
+      </h2>
+
+    </div>
+
+
+    <div class="teams-grid">
+
+
+      <article class="team-card">
+
+
+        <div
+          class="team-photo team-photo-billot"
+          aria-label="Équipe du Billot de Daguerre"
+        >
+        </div>
+
+
+        <div class="team-content">
+
+          <p class="team-location">
+            Paris 14ᵉ · Rue Daguerre
+          </p>
+
+          <h3>
+            Le Billot de Daguerre
+          </h3>
+
+          <p>
+
+            Une équipe au service
+            du quartier,
+            attentive au conseil,
+            à la préparation
+            et à la qualité des produits.
+
+          </p>
+
+        </div>
+
+
+      </article>
+
+
+
+      <article class="team-card">
+
+
+        <div
+          class="team-photo team-photo-square"
+          aria-label="Équipe de la Boucherie du Square"
+        >
+        </div>
+
+
+        <div class="team-content">
+
+          <p class="team-location">
+            Paris 15ᵉ · Rue du Commerce
+          </p>
+
+          <h3>
+            Boucherie du Square
+          </h3>
+
+          <p>
+
+            Une équipe de proximité
+            attachée à l’accueil,
+            au service
+            et au conseil
+            au quotidien.
+
+          </p>
+
+        </div>
+
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+MANIERE DE TRAVAILLER
+========================================================= -->
+
+<section class="values-section">
+
+  <div class="container">
+
+
+    <div class="values-heading">
+
+
+      <div>
+
+        <p class="section-kicker">
+          Notre manière de travailler
+        </p>
+
+        <h2>
+          Le métier,
+          simplement
+        </h2>
+
+      </div>
+
+
+      <p>
+
+        Ces principes seront précisés
+        avec Alain afin de présenter
+        fidèlement ce qui distingue
+        les deux boutiques.
+
+      </p>
+
+
+    </div>
+
+
+    <div class="values-grid">
+
+
+      <article class="value-item">
+
+        <span class="value-number">
+          01
+        </span>
+
+        <h3>
+          Sélection
+        </h3>
+
+        <p>
+          Choisir les produits
+          avec attention et exigence.
+        </p>
+
+      </article>
+
+
+      <article class="value-item">
+
+        <span class="value-number">
+          02
+        </span>
+
+        <h3>
+          Préparation
+        </h3>
+
+        <p>
+          Travailler chaque morceau
+          avec précision.
+        </p>
+
+      </article>
+
+
+      <article class="value-item">
+
+        <span class="value-number">
+          03
+        </span>
+
+        <h3>
+          Conseil
+        </h3>
+
+        <p>
+          Orienter chaque client
+          selon ses envies et ses besoins.
+        </p>
+
+      </article>
+
+
+      <article class="value-item">
+
+        <span class="value-number">
+          04
+        </span>
+
+        <h3>
+          Proximité
+        </h3>
+
+        <p>
+          Faire vivre une relation
+          de confiance dans chaque quartier.
+        </p>
+
+      </article>
+
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- =========================================================
+FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+  <div class="container footer-top">
+
+
+    <div>
+
+      <div class="footer-brand">
+        Le Billot & le Square
+      </div>
+
+      <p>
+
+        Deux boucheries artisanales à Paris,<br>
+        dans les 14ᵉ et 15ᵉ arrondissements.
+
+      </p>
+
+    </div>
+
+
+    <nav class="footer-nav">
+
+      <a href="billot-de-daguerre.html">
+        Le Billot de Daguerre
+      </a>
+
+      <a href="boucherie-du-square.html">
+        Boucherie du Square
+      </a>
+
+      <a href="nos-produits.html">
+        Nos produits
+      </a>
+
+      <a href="la-maison.html">
+        La Maison
+      </a>
+
+      <a href="carte-de-saison.html">
+        Notre carte de saison
+      </a>
+
+    </nav>
+
+
+  </div>
+
+
+  <div class="container footer-bottom">
+
+    <span>
+      © Le Billot & le Square
+    </span>
+
+    <div>
+
+      <a href="#">
+        Mentions légales
+      </a>
+
+      <a href="#">
+        Confidentialité
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>
