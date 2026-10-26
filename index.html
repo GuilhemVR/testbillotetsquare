@@ -15,6 +15,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
     rel="stylesheet"
@@ -173,34 +174,6 @@
 
       .mobile-menu {
         padding: 105px 20px 36px;
-      }
-    }
-
-    /* =========================================
-       PHOTOGRAPHIES DES DEUX BOUCHERIES
-       Redimensionnement automatique
-    ========================================= */
-
-    .shop-card .image-placeholder {
-      width: 100%;
-      height: 440px;
-      min-height: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-
-    .shop-card .image-placeholder img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      max-width: none;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    @media (max-width: 720px) {
-      .shop-card .image-placeholder {
-        height: 300px;
       }
     }
 
@@ -432,10 +405,10 @@
 
       <article class="shop-card">
 
-        <div class="image-placeholder">
+        <div class="shop-photo shop-photo--daguerre">
           <img
-            src="images/Enseigne_Daguerre.jpg"
-            alt="Façade du Billot de Daguerre, boucherie artisanale à Paris 14e"
+            src="images/Le_Billot_de_Daguerre.jpg"
+            alt="Devanture du Billot de Daguerre, boucherie artisanale à Paris 14e"
             loading="lazy"
             decoding="async"
           >
@@ -467,16 +440,17 @@
 
       </article>
 
+
       <!-- =====================================
            BOUCHERIE DU SQUARE
       ===================================== -->
 
       <article class="shop-card">
 
-        <div class="image-placeholder">
+        <div class="shop-photo shop-photo--square">
           <img
-            src="images/Enseigne_Commerce.jpg"
-            alt="Façade de la Boucherie du Square, boucherie artisanale à Paris 15e"
+            src="images/Boucherie_du_Square.jpg"
+            alt="Devanture de la Boucherie du Square, boucherie artisanale à Paris 15e"
             loading="lazy"
             decoding="async"
           >
@@ -860,9 +834,7 @@
   function closeMobileMenu() {
 
     menuToggle.classList.remove("is-open");
-
     mobileMenu.classList.remove("is-open");
-
     document.body.classList.remove("menu-open");
 
     menuToggle.setAttribute(
@@ -881,9 +853,7 @@
   function openMobileMenu() {
 
     menuToggle.classList.add("is-open");
-
     mobileMenu.classList.add("is-open");
-
     document.body.classList.add("menu-open");
 
     menuToggle.setAttribute(
