@@ -1,13 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
 <head>
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Le Billot & le Square — Boucheries artisanales à Paris</title>
 
@@ -17,13 +14,7 @@
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
     rel="stylesheet"
@@ -31,12 +22,11 @@
 
   <link rel="stylesheet" href="style.css">
 
-
   <style>
 
-    /* =========================================================
+    /* =========================================
        MENU HAMBURGER MOBILE
-    ========================================================= */
+    ========================================= */
 
     .menu-toggle {
       display: none;
@@ -59,18 +49,11 @@
       width: 21px;
       height: 1.5px;
       background: white;
-      transition:
-        transform .25s ease,
-        opacity .25s ease;
+      transition: transform .25s ease, opacity .25s ease;
     }
 
-
-    /* transformation du hamburger en croix */
-
     .menu-toggle.is-open span:nth-child(1) {
-      transform:
-        translateY(6.5px)
-        rotate(45deg);
+      transform: translateY(6.5px) rotate(45deg);
     }
 
     .menu-toggle.is-open span:nth-child(2) {
@@ -78,24 +61,17 @@
     }
 
     .menu-toggle.is-open span:nth-child(3) {
-      transform:
-        translateY(-6.5px)
-        rotate(-45deg);
+      transform: translateY(-6.5px) rotate(-45deg);
     }
-
-
-    /* panneau mobile */
 
     .mobile-menu {
       display: none;
     }
 
-
     @media (max-width: 1100px) {
 
       .site-header {
-        grid-template-columns:
-          1fr auto;
+        grid-template-columns: 1fr auto;
       }
 
       .main-nav,
@@ -107,37 +83,24 @@
         display: flex;
       }
 
-
       .mobile-menu {
         position: fixed;
         inset: 0;
         z-index: 1000;
-
         display: flex;
         flex-direction: column;
-
-        padding:
-          120px 28px 42px;
-
-        background:
-          rgba(12,11,10,.985);
-
+        padding: 120px 28px 42px;
+        background: rgba(12,11,10,.985);
         color: white;
-
         opacity: 0;
         visibility: hidden;
-
-        transform:
-          translateY(-12px);
-
+        transform: translateY(-12px);
         transition:
           opacity .25s ease,
           visibility .25s ease,
           transform .25s ease;
-
         overflow-y: auto;
       }
-
 
       .mobile-menu.is-open {
         opacity: 1;
@@ -145,117 +108,61 @@
         transform: translateY(0);
       }
 
-
       .mobile-menu-inner {
-        width:
-          min(
-            100%,
-            620px
-          );
-
-        margin:
-          0 auto;
+        width: min(100%, 620px);
+        margin: 0 auto;
       }
-
 
       .mobile-menu-label {
-        margin:
-          0 0 16px;
-
+        margin: 0 0 16px;
         font-size: 10px;
-
         text-transform: uppercase;
-
         letter-spacing: .25em;
-
-        color:
-          rgba(255,255,255,.42);
+        color: rgba(255,255,255,.42);
       }
-
 
       .mobile-menu-group {
-        padding:
-          25px 0;
-
-        border-bottom:
-          1px solid
-          rgba(255,255,255,.14);
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(255,255,255,.14);
       }
-
 
       .mobile-menu-main-link {
         display: block;
-
-        padding:
-          9px 0;
-
-        font-family:
-          "Cormorant Garamond",
-          Georgia,
-          serif;
-
-        font-size:
-          clamp(
-            35px,
-            8vw,
-            48px
-          );
-
+        padding: 9px 0;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(35px, 8vw, 48px);
         line-height: 1;
-
         text-decoration: none;
       }
-
 
       .mobile-submenu {
         display: flex;
         flex-direction: column;
-
         gap: 13px;
-
         margin-top: 20px;
-
         padding-left: 17px;
-
-        border-left:
-          1px solid
-          rgba(255,255,255,.25);
+        border-left: 1px solid rgba(255,255,255,.25);
       }
 
-
       .mobile-submenu a {
-        color:
-          rgba(255,255,255,.72);
-
+        color: rgba(255,255,255,.72);
         font-size: 14px;
-
         line-height: 1.5;
-
         text-decoration: none;
       }
 
-
       .mobile-menu-footer {
-        margin-top:
-          45px;
-
+        margin-top: 45px;
         font-size: 10px;
-
         text-transform: uppercase;
-
         letter-spacing: .19em;
-
-        color:
-          rgba(255,255,255,.36);
+        color: rgba(255,255,255,.36);
       }
-
 
       body.menu-open {
         overflow: hidden;
       }
-
     }
-
 
     @media (max-width: 600px) {
 
@@ -265,48 +172,66 @@
       }
 
       .mobile-menu {
-        padding:
-          105px 20px 36px;
+        padding: 105px 20px 36px;
       }
+    }
 
+    /* =========================================
+       PHOTOGRAPHIES DES DEUX BOUCHERIES
+       Redimensionnement automatique
+    ========================================= */
+
+    .shop-card .image-placeholder {
+      width: 100%;
+      height: 440px;
+      min-height: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .shop-card .image-placeholder img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    @media (max-width: 720px) {
+      .shop-card .image-placeholder {
+        height: 300px;
+      }
     }
 
   </style>
 
 </head>
 
-
 <body>
 
-
-<!-- =========================================================
-HEADER / HERO
-========================================================= -->
+<!-- =========================================
+     HEADER / HERO
+========================================= -->
 
 <section class="hero">
 
   <div class="hero-overlay"></div>
 
-
   <header class="site-header">
 
     <a href="index.html" class="brand">
-
       <span class="brand-main">
         Le Billot & le Square
       </span>
-
       <span class="brand-sub">
         Boucheries artisanales · Paris
       </span>
-
     </a>
-
 
     <!-- NAVIGATION DESKTOP -->
 
     <nav class="main-nav">
-
 
       <div class="nav-dropdown">
 
@@ -315,48 +240,35 @@ HEADER / HERO
           <span class="nav-arrow">⌄</span>
         </button>
 
-
         <div class="dropdown-menu">
-
           <a href="billot-de-daguerre.html">
             Le Billot de Daguerre
           </a>
-
           <a href="boucherie-du-square.html">
             Boucherie du Square
           </a>
-
         </div>
 
       </div>
-
 
       <a href="nos-produits.html">
         Nos produits
       </a>
 
-
       <a href="la-maison.html">
         La Maison
       </a>
-
 
       <a href="carte-de-saison.html">
         Notre carte de saison
       </a>
 
-
     </nav>
 
-
-    <a
-      href="nos-produits.html"
-      class="header-cta"
-    >
+    <a href="nos-produits.html" class="header-cta">
       Voir nos produits
       <span>→</span>
     </a>
-
 
     <!-- BOUTON HAMBURGER MOBILE -->
 
@@ -367,21 +279,16 @@ HEADER / HERO
       aria-expanded="false"
       aria-controls="mobileMenu"
     >
-
       <span></span>
       <span></span>
       <span></span>
-
     </button>
-
 
   </header>
 
-
-
-  <!-- =========================================================
+  <!-- =========================================
        MENU MOBILE
-  ========================================================= -->
+  ========================================= -->
 
   <nav
     class="mobile-menu"
@@ -391,78 +298,59 @@ HEADER / HERO
 
     <div class="mobile-menu-inner">
 
-
       <div class="mobile-menu-group">
-
         <p class="mobile-menu-label">
           Nos boutiques
         </p>
 
         <div class="mobile-submenu">
-
           <a href="billot-de-daguerre.html">
             Le Billot de Daguerre
           </a>
-
           <a href="boucherie-du-square.html">
             Boucherie du Square
           </a>
-
         </div>
-
       </div>
 
-
       <div class="mobile-menu-group">
-
         <a
           href="nos-produits.html"
           class="mobile-menu-main-link"
         >
           Nos produits
         </a>
-
       </div>
 
-
       <div class="mobile-menu-group">
-
         <a
           href="la-maison.html"
           class="mobile-menu-main-link"
         >
           La Maison
         </a>
-
       </div>
 
-
       <div class="mobile-menu-group">
-
         <a
           href="carte-de-saison.html"
           class="mobile-menu-main-link"
         >
           Notre carte de saison
         </a>
-
       </div>
-
 
       <div class="mobile-menu-footer">
         Le Billot & le Square · Paris
       </div>
 
-
     </div>
 
   </nav>
 
-
-
-  <!-- =========================================================
+  <!-- =========================================
        HERO
-  ========================================================= -->
+  ========================================= -->
 
   <div class="hero-inner">
 
@@ -470,37 +358,25 @@ HEADER / HERO
       Le Billot & le Square
     </p>
 
-
     <h1>
       Deux boucheries<br>
       artisanales à Paris
     </h1>
 
-
     <p class="hero-intro">
-
       Des produits sélectionnés avec soin,
       le savoir-faire et le conseil
       de vos artisans bouchers.
-
     </p>
-
 
     <div class="hero-actions">
 
-      <a
-        href="#boutiques"
-        class="btn btn-light"
-      >
+      <a href="#boutiques" class="btn btn-light">
         Nos boutiques
         <span>→</span>
       </a>
 
-
-      <a
-        href="nos-produits.html"
-        class="btn btn-outline"
-      >
+      <a href="nos-produits.html" class="btn btn-outline">
         Voir nos produits
         <span>→</span>
       </a>
@@ -508,7 +384,6 @@ HEADER / HERO
     </div>
 
   </div>
-
 
   <a
     href="#boutiques"
@@ -521,10 +396,9 @@ HEADER / HERO
 </section>
 
 
-
-<!-- =========================================================
-NOS BOUTIQUES
-========================================================= -->
+<!-- =========================================
+     NOS BOUTIQUES
+========================================= -->
 
 <section
   class="section section-light"
@@ -533,19 +407,16 @@ NOS BOUTIQUES
 
   <div class="container">
 
-
     <div class="section-heading">
 
       <p class="section-kicker">
         Nos adresses
       </p>
 
-
       <h2>
         Deux boucheries,<br>
         une même exigence
       </h2>
-
 
       <p>
         Deux adresses parisiennes, une même exigence de qualité et le goût du conseil.
@@ -553,19 +424,22 @@ NOS BOUTIQUES
 
     </div>
 
-
-
     <div class="shop-grid">
 
-
-      <!-- BILLOT -->
+      <!-- =====================================
+           LE BILLOT DE DAGUERRE
+      ===================================== -->
 
       <article class="shop-card">
 
         <div class="image-placeholder">
-          Photographie du Billot de Daguerre
+          <img
+            src="images/Enseigne_Daguerre.jpg"
+            alt="Façade du Billot de Daguerre, boucherie artisanale à Paris 14e"
+            loading="lazy"
+            decoding="async"
+          >
         </div>
-
 
         <div class="shop-card-content">
 
@@ -573,16 +447,13 @@ NOS BOUTIQUES
             Paris 14ᵉ · Rue Daguerre
           </p>
 
-
           <h3>
             Le Billot de Daguerre
           </h3>
 
-
           <p>
             Au cœur du 14ᵉ arrondissement, Le Billot de Daguerre vous accueille autour d’une sélection exigeante de viandes et d’un savoir-faire artisanal.
           </p>
-
 
           <a
             href="billot-de-daguerre.html"
@@ -596,16 +467,20 @@ NOS BOUTIQUES
 
       </article>
 
-
-
-      <!-- SQUARE -->
+      <!-- =====================================
+           BOUCHERIE DU SQUARE
+      ===================================== -->
 
       <article class="shop-card">
 
         <div class="image-placeholder">
-          Photographie de la Boucherie du Square
+          <img
+            src="images/Enseigne_Commerce.jpg"
+            alt="Façade de la Boucherie du Square, boucherie artisanale à Paris 15e"
+            loading="lazy"
+            decoding="async"
+          >
         </div>
-
 
         <div class="shop-card-content">
 
@@ -613,16 +488,13 @@ NOS BOUTIQUES
             Paris 15ᵉ · Rue du Commerce
           </p>
 
-
           <h3>
             Boucherie du Square
           </h3>
 
-
           <p>
             Dans le 15ᵉ arrondissement, la Boucherie du Square cultive l’esprit d’une adresse de proximité, attentive à la qualité des produits et au conseil.
           </p>
-
 
           <a
             href="boucherie-du-square.html"
@@ -636,7 +508,6 @@ NOS BOUTIQUES
 
       </article>
 
-
     </div>
 
   </div>
@@ -644,10 +515,9 @@ NOS BOUTIQUES
 </section>
 
 
-
-<!-- =========================================================
-NOS PRODUITS
-========================================================= -->
+<!-- =========================================
+     NOS PRODUITS
+========================================= -->
 
 <section
   class="section section-dark"
@@ -656,19 +526,16 @@ NOS PRODUITS
 
   <div class="container">
 
-
     <div class="section-heading light">
 
       <p class="section-kicker">
         Notre sélection
       </p>
 
-
       <h2>
         Des produits sélectionnés<br>
         avec exigence
       </h2>
-
 
       <p>
         Découvrez les principales familles
@@ -677,10 +544,7 @@ NOS PRODUITS
 
     </div>
 
-
-
     <div class="product-grid">
-
 
       <article class="product-card">
 
@@ -698,8 +562,6 @@ NOS PRODUITS
 
       </article>
 
-
-
       <article class="product-card">
 
         <div class="product-image placeholder-dark">
@@ -715,8 +577,6 @@ NOS PRODUITS
         </p>
 
       </article>
-
-
 
       <article class="product-card">
 
@@ -734,9 +594,7 @@ NOS PRODUITS
 
       </article>
 
-
     </div>
-
 
     <a
       href="nos-produits.html"
@@ -751,15 +609,13 @@ NOS PRODUITS
 </section>
 
 
-
-<!-- =========================================================
-LA MAISON
-========================================================= -->
+<!-- =========================================
+     LA MAISON
+========================================= -->
 
 <section class="section section-ivory">
 
   <div class="container house-grid">
-
 
     <div>
 
@@ -767,14 +623,11 @@ LA MAISON
         La Maison
       </p>
 
-
       <h2>
         Le goût du métier
       </h2>
 
     </div>
-
-
 
     <div class="house-copy">
 
@@ -787,7 +640,6 @@ LA MAISON
         dans son choix.
       </p>
 
-
       <a
         href="la-maison.html"
         class="text-link"
@@ -798,21 +650,18 @@ LA MAISON
 
     </div>
 
-
   </div>
 
 </section>
 
 
-
-<!-- =========================================================
-CARTE DE SAISON
-========================================================= -->
+<!-- =========================================
+     CARTE DE SAISON
+========================================= -->
 
 <section class="season-section">
 
   <div class="container season-inner">
-
 
     <div>
 
@@ -820,11 +669,9 @@ CARTE DE SAISON
         Au fil des saisons
       </p>
 
-
       <h2>
         Notre carte de saison
       </h2>
-
 
       <p>
         Découvrez les produits,
@@ -835,7 +682,6 @@ CARTE DE SAISON
 
     </div>
 
-
     <a
       href="carte-de-saison.html"
       class="btn btn-light"
@@ -844,21 +690,18 @@ CARTE DE SAISON
       <span>→</span>
     </a>
 
-
   </div>
 
 </section>
 
 
-
-<!-- =========================================================
-INFORMATIONS PRATIQUES
-========================================================= -->
+<!-- =========================================
+     INFORMATIONS PRATIQUES
+========================================= -->
 
 <section class="section section-light">
 
   <div class="container">
-
 
     <div class="section-heading">
 
@@ -866,17 +709,13 @@ INFORMATIONS PRATIQUES
         Informations pratiques
       </p>
 
-
       <h2>
         Nos deux boutiques
       </h2>
 
     </div>
 
-
-
     <div class="info-grid">
-
 
       <article class="info-card">
 
@@ -884,17 +723,14 @@ INFORMATIONS PRATIQUES
           Paris 14ᵉ · Rue Daguerre
         </p>
 
-
         <h3>
           Le Billot de Daguerre
         </h3>
-
 
         <p>
           Adresse complète,
           téléphone et horaires à compléter.
         </p>
-
 
         <a
           href="billot-de-daguerre.html"
@@ -906,25 +742,20 @@ INFORMATIONS PRATIQUES
 
       </article>
 
-
-
       <article class="info-card">
 
         <p class="shop-location">
           Paris 15ᵉ · Rue du Commerce
         </p>
 
-
         <h3>
           Boucherie du Square
         </h3>
-
 
         <p>
           Adresse complète,
           téléphone et horaires à compléter.
         </p>
-
 
         <a
           href="boucherie-du-square.html"
@@ -936,7 +767,6 @@ INFORMATIONS PRATIQUES
 
       </article>
 
-
     </div>
 
   </div>
@@ -944,15 +774,13 @@ INFORMATIONS PRATIQUES
 </section>
 
 
-
-<!-- =========================================================
-FOOTER
-========================================================= -->
+<!-- =========================================
+     FOOTER
+========================================= -->
 
 <footer class="footer">
 
   <div class="container footer-top">
-
 
     <div>
 
@@ -960,15 +788,12 @@ FOOTER
         Le Billot & le Square
       </div>
 
-
       <p>
         Deux boucheries artisanales à Paris,<br>
         dans les 14ᵉ et 15ᵉ arrondissements.
       </p>
 
     </div>
-
-
 
     <nav class="footer-nav">
 
@@ -994,17 +819,13 @@ FOOTER
 
     </nav>
 
-
   </div>
-
-
 
   <div class="container footer-bottom">
 
     <span>
       © Le Billot & le Square
     </span>
-
 
     <div>
 
@@ -1023,10 +844,9 @@ FOOTER
 </footer>
 
 
-
-<!-- =========================================================
-JAVASCRIPT MENU MOBILE
-========================================================= -->
+<!-- =========================================
+     JAVASCRIPT MENU MOBILE
+========================================= -->
 
 <script>
 
@@ -1084,19 +904,12 @@ JAVASCRIPT MENU MOBILE
     function () {
 
       const isOpen =
-        mobileMenu.classList.contains(
-          "is-open"
-        );
-
+        mobileMenu.classList.contains("is-open");
 
       if (isOpen) {
-
         closeMobileMenu();
-
       } else {
-
         openMobileMenu();
-
       }
 
     }
@@ -1122,13 +935,9 @@ JAVASCRIPT MENU MOBILE
       if (
         event.key === "Escape"
         &&
-        mobileMenu.classList.contains(
-          "is-open"
-        )
+        mobileMenu.classList.contains("is-open")
       ) {
-
         closeMobileMenu();
-
       }
 
     }
@@ -1139,12 +948,8 @@ JAVASCRIPT MENU MOBILE
     "resize",
     function() {
 
-      if (
-        window.innerWidth > 1100
-      ) {
-
+      if (window.innerWidth > 1100) {
         closeMobileMenu();
-
       }
 
     }
@@ -1152,7 +957,5 @@ JAVASCRIPT MENU MOBILE
 
 </script>
 
-
 </body>
-
 </html>
