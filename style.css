@@ -403,43 +403,60 @@ img {
   background: white;
 }
 
-/* Style générique des emplacements photo */
-
-.image-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 440px;
-  padding: 30px;
-  background: #ddd7ce;
-  color: #71695f;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .15em;
-  font-size: 10px;
-}
 
 /* =========================================================
-   PHOTOGRAPHIES DES DEUX BOUCHERIES
-   REDIMENSIONNEMENT ET RECADRAGE
+   PHOTOGRAPHIES DES BOUCHERIES
+
+   Format identique : 8:5
+   Noir et blanc appliqué par le navigateur
+   Cadrage individuel de chaque photographie
 ========================================================= */
 
-.shop-card .image-placeholder {
+.shop-photo {
+  position: relative;
   width: 100%;
-  height: 440px;
-  min-height: 0;
-  padding: 0;
+  aspect-ratio: 8 / 5;
   overflow: hidden;
+  background: #ddd7ce;
 }
 
-.shop-card .image-placeholder img {
+.shop-photo img {
+  position: absolute;
+  inset: 0;
+
   display: block;
   width: 100%;
   height: 100%;
   max-width: none;
+
+  /* Remplissage de l'encart */
   object-fit: cover;
-  object-position: center;
+
+  /* Traitement noir et blanc */
+  filter:
+    grayscale(100%)
+    contrast(1.06)
+    brightness(1.02);
 }
+
+
+/* =========================================
+   CADRAGE : LE BILLOT DE DAGUERRE
+========================================= */
+
+.shop-photo--daguerre img {
+  object-position: center center;
+}
+
+
+/* =========================================
+   CADRAGE : BOUCHERIE DU SQUARE
+========================================= */
+
+.shop-photo--square img {
+  object-position: center top;
+}
+
 
 /* =========================================================
    CONTENU DES CARTES BOUTIQUES
@@ -767,16 +784,12 @@ img {
     grid-column: auto;
   }
 
-  .image-placeholder,
   .product-image {
     min-height: 300px;
   }
 
-  /* Photographies des boutiques sur mobile */
-
-  .shop-card .image-placeholder {
-    height: 300px;
-  }
+  /* Les photos des boutiques conservent
+     automatiquement leur ratio 8:5 */
 
   .footer-top,
   .footer-bottom {
