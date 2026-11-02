@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>La Maison — Le Billot & le Square</title>
+  <title>La Maison — Le Billot &amp; le Square</title>
   <meta
     name="description"
     content="Découvrez l’histoire, la vision et les équipes du Billot de Daguerre et de la Boucherie du Square à Paris."
@@ -30,13 +29,8 @@
       --sans: "Montserrat", Arial, sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -45,13 +39,8 @@
       background: var(--paper);
     }
 
-    a {
-      color: inherit;
-    }
-
-    button {
-      font: inherit;
-    }
+    a { color: inherit; }
+    button { font: inherit; }
 
     a:focus-visible,
     button:focus-visible {
@@ -73,7 +62,7 @@
       font-weight: 500;
     }
 
-    /* HEADER */
+    /* EN-TÊTE ET NAVIGATION */
 
     .internal-header {
       background: var(--dark);
@@ -137,9 +126,7 @@
     }
 
     .main-nav > a:hover,
-    .nav-dropdown-button:hover {
-      opacity: .70;
-    }
+    .nav-dropdown-button:hover { opacity: .70; }
 
     .nav-dropdown {
       position: relative;
@@ -188,9 +175,7 @@
       font-size: 17px;
     }
 
-    .dropdown-menu a:hover {
-      background: rgba(255,255,255,.08);
-    }
+    .dropdown-menu a:hover { background: rgba(255,255,255,.08); }
 
     .header-cta {
       display: inline-block;
@@ -204,11 +189,7 @@
       white-space: nowrap;
     }
 
-    .header-cta span {
-      margin-left: 12px;
-    }
-
-    /* BURGER : MASQUÉ SUR ORDINATEUR */
+    .header-cta span { margin-left: 12px; }
 
     .menu-toggle {
       display: none;
@@ -239,19 +220,15 @@
       transform: translateY(6.5px) rotate(45deg);
     }
 
-    .menu-toggle.is-open span:nth-child(2) {
-      opacity: 0;
-    }
+    .menu-toggle.is-open span:nth-child(2) { opacity: 0; }
 
     .menu-toggle.is-open span:nth-child(3) {
       transform: translateY(-6.5px) rotate(-45deg);
     }
 
-    .mobile-menu {
-      display: none;
-    }
+    .mobile-menu { display: none; }
 
-    /* HERO */
+    /* BANDEAU LA MAISON */
 
     .house-hero {
       min-height: 520px;
@@ -317,9 +294,7 @@
       letter-spacing: -.035em;
     }
 
-    .house-intro-copy {
-      max-width: 680px;
-    }
+    .house-intro-copy { max-width: 680px; }
 
     .house-intro-copy p {
       color: var(--muted);
@@ -335,7 +310,7 @@
       color: #28231f;
     }
 
-    /* LES ÉQUIPES */
+    /* AU COMPTOIR */
 
     .teams-section {
       padding: 120px 0;
@@ -345,63 +320,16 @@
 
     .teams-heading {
       max-width: 740px;
-      margin-bottom: 70px;
+      margin-bottom: clamp(24px, 4vw, 48px);
     }
 
-    .teams-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 28px;
+    .comptoir-photo {
+      display: block;
+      width: 100%;
+      height: auto;
     }
 
-    .team-card {
-      min-width: 0;
-      background: #fff;
-    }
-
-    .team-photo {
-      min-height: 440px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 30px;
-      border: 1px solid #c9c0b4;
-      background: #ddd7ce;
-      color: #655d53;
-      text-align: center;
-      font-size: 12px;
-      letter-spacing: .08em;
-    }
-
-    .team-content {
-      padding: 36px 36px 40px;
-    }
-
-    .team-content .team-location {
-      margin: 0 0 14px;
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: .18em;
-      color: #81796f;
-    }
-
-    .team-content h3 {
-      margin: 0 0 16px;
-      color: var(--text);
-      font-family: var(--serif);
-      font-size: 40px;
-      font-weight: 400;
-      line-height: 1;
-    }
-
-    .team-content p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.8;
-    }
-
-    /* NOTRE HISTOIRE */
+    /* NOTRE HISTOIRE : DEUX DATES */
 
     .history-section {
       padding: 120px 0;
@@ -432,7 +360,7 @@
 
     .timeline {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       border-top: 1px solid rgba(255,255,255,.18);
     }
 
@@ -441,13 +369,8 @@
       border-right: 1px solid rgba(255,255,255,.18);
     }
 
-    .timeline-item:not(:first-child) {
-      padding-left: 42px;
-    }
-
-    .timeline-item:last-child {
-      border-right: 0;
-    }
+    .timeline-item:not(:first-child) { padding-left: 42px; }
+    .timeline-item:last-child { border-right: 0; }
 
     .timeline-date {
       display: block;
@@ -473,50 +396,58 @@
       font-size: 13px;
     }
 
-   <!-- NOTRE MANIÈRE DE TRAVAILLER -->
+    /* NOTRE MANIÈRE DE TRAVAILLER : QUATRE COLONNES */
 
-<section class="values-section">
-  <div class="container">
+    .values-section {
+      padding: 115px 0;
+      background: var(--ivory);
+      color: var(--text);
+    }
 
-    <div class="values-heading">
-      <div>
-        <p class="section-kicker">Notre manière de travailler</p>
-        <h2>Le métier, simplement</h2>
-      </div>
-    </div>
+    .values-heading { margin-bottom: 70px; }
 
-    <div class="values-grid">
+    .values-heading h2 {
+      font-size: clamp(50px, 5vw, 76px);
+    }
 
-      <article class="value-item">
-        <span class="value-number">01</span>
-        <h3>Sélection</h3>
-        <p>Choisir les produits avec attention et exigence.</p>
-      </article>
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid rgba(24,21,18,.16);
+    }
 
-      <article class="value-item">
-        <span class="value-number">02</span>
-        <h3>Préparation</h3>
-        <p>Travailler chaque morceau avec précision.</p>
-      </article>
+    .value-item {
+      padding: 35px 28px 15px 0;
+      border-right: 1px solid rgba(24,21,18,.16);
+    }
 
-      <article class="value-item">
-        <span class="value-number">03</span>
-        <h3>Conseil</h3>
-        <p>Orienter chaque client selon ses envies et ses besoins.</p>
-      </article>
+    .value-item:not(:first-child) { padding-left: 28px; }
+    .value-item:last-child { border-right: 0; }
 
-      <article class="value-item">
-        <span class="value-number">04</span>
-        <h3>Proximité</h3>
-        <p>Faire vivre une relation de confiance dans chaque quartier.</p>
-      </article>
+    .value-number {
+      display: block;
+      margin-bottom: 35px;
+      color: #81796f;
+      font-size: 10px;
+      letter-spacing: .17em;
+    }
 
-    </div>
+    .value-item h3 {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-family: var(--serif);
+      font-size: 34px;
+      font-weight: 400;
+    }
 
-  </div>
-</section>
+    .value-item p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.8;
+    }
 
-    /* FOOTER */
+    /* PIED DE PAGE */
 
     .footer {
       padding: 80px 0 26px;
@@ -548,9 +479,7 @@
     }
 
     .footer-nav a,
-    .footer-bottom a {
-      text-decoration: none;
-    }
+    .footer-bottom a { text-decoration: none; }
 
     .footer-bottom {
       display: flex;
@@ -567,7 +496,7 @@
       gap: 25px;
     }
 
-    /* NAVIGATION SUR PETITS ÉCRANS */
+    /* MENU MOBILE */
 
     @media (max-width: 1100px) {
       .site-header {
@@ -581,9 +510,7 @@
       }
 
       .main-nav,
-      .header-cta {
-        display: none;
-      }
+      .header-cta { display: none; }
 
       .site-header .menu-toggle {
         display: flex;
@@ -592,18 +519,14 @@
         justify-self: end;
       }
 
-      body.menu-open {
-        overflow: hidden;
-      }
+      body.menu-open { overflow: hidden; }
 
       body.menu-open .internal-header {
         position: relative;
         z-index: 1001;
       }
 
-      body.menu-open .site-header {
-        z-index: 1002;
-      }
+      body.menu-open .site-header { z-index: 1002; }
 
       .mobile-menu {
         position: fixed;
@@ -617,10 +540,7 @@
         opacity: 0;
         visibility: hidden;
         transform: translateY(-12px);
-        transition:
-          opacity .25s,
-          visibility .25s,
-          transform .25s;
+        transition: opacity .25s, visibility .25s, transform .25s;
         overflow-y: auto;
       }
 
@@ -684,19 +604,15 @@
       }
     }
 
-    /* CONTENU TABLETTE */
+    /* TABLETTE */
 
     @media (max-width: 900px) {
-      .house-intro-grid,
-      .values-heading {
+      .house-intro-grid {
         grid-template-columns: 1fr;
         gap: 45px;
       }
 
-      .teams-grid,
-      .timeline {
-        grid-template-columns: 1fr;
-      }
+      .timeline { grid-template-columns: 1fr; }
 
       .timeline-item,
       .timeline-item:not(:first-child) {
@@ -709,12 +625,11 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
 
-      .value-item:nth-child(2) {
-        border-right: 0;
-      }
+      .value-item:nth-child(2) { border-right: 0; }
+      .value-item:nth-child(3) { padding-left: 0; }
     }
 
-    /* CONTENU MOBILE */
+    /* MOBILE */
 
     @media (max-width: 720px) {
       .container,
@@ -727,13 +642,8 @@
         min-height: 76px;
       }
 
-      .brand-main {
-        font-size: 24px;
-      }
-
-      .brand-sub {
-        display: none;
-      }
+      .brand-main { font-size: 24px; }
+      .brand-sub { display: none; }
 
       .footer-top,
       .footer-bottom {
@@ -741,9 +651,7 @@
         align-items: flex-start;
       }
 
-      .footer-bottom div {
-        flex-wrap: wrap;
-      }
+      .footer-bottom div { flex-wrap: wrap; }
     }
 
     @media (max-width: 600px) {
@@ -751,58 +659,22 @@
         grid-template-columns: minmax(0, 1fr) 42px;
       }
 
-      .menu-toggle {
-        width: 42px;
-        height: 42px;
-      }
-
-      .mobile-menu {
-        padding: 105px 20px 36px;
-      }
-
-      .house-hero {
-        min-height: 430px;
-      }
-
-      .house-hero-content {
-        padding-bottom: 45px;
-      }
-
-      .house-hero h1 {
-        font-size: clamp(60px, 18vw, 84px);
-      }
-
-      .house-hero-subtitle {
-        font-size: 23px;
-      }
+      .menu-toggle { width: 42px; height: 42px; }
+      .mobile-menu { padding: 105px 20px 36px; }
+      .house-hero { min-height: 430px; }
+      .house-hero-content { padding-bottom: 45px; }
+      .house-hero h1 { font-size: clamp(60px, 18vw, 84px); }
+      .house-hero-subtitle { font-size: 23px; }
 
       .house-intro,
       .teams-section,
       .history-section,
-      .values-section {
-        padding: 75px 0;
-      }
+      .values-section { padding: 75px 0; }
 
       .teams-heading h2,
-      .history-heading h2 {
-        font-size: clamp(40px, 12vw, 56px);
-      }
+      .history-heading h2 { font-size: clamp(40px, 12vw, 56px); }
 
-      .team-photo {
-        min-height: 270px;
-      }
-
-      .team-content {
-        padding: 28px 24px;
-      }
-
-      .team-content h3 {
-        font-size: 34px;
-      }
-
-      .values-grid {
-        grid-template-columns: 1fr;
-      }
+      .values-grid { grid-template-columns: 1fr; }
 
       .value-item,
       .value-item:not(:first-child) {
@@ -813,39 +685,33 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
+      html { scroll-behavior: auto; }
 
       .mobile-menu,
       .menu-toggle span,
-      .dropdown-menu {
-        transition: none;
-      }
+      .dropdown-menu { transition: none; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
+  <!-- EN-TÊTE -->
 
   <div class="internal-header">
     <header class="site-header">
 
       <a href="index.html" class="brand">
-        <span class="brand-main">Le Billot & le Square</span>
+        <span class="brand-main">Le Billot &amp; le Square</span>
         <span class="brand-sub">Boucheries artisanales · Paris</span>
       </a>
 
       <nav class="main-nav" aria-label="Navigation principale">
-
         <div class="nav-dropdown">
           <button class="nav-dropdown-button" type="button">
             Nos boutiques
             <span class="nav-arrow" aria-hidden="true">⌄</span>
           </button>
-
           <div class="dropdown-menu">
             <a href="billot-de-daguerre.html">Le Billot de Daguerre</a>
             <a href="boucherie-du-square.html">Boucherie du Square</a>
@@ -884,7 +750,6 @@
 
       <div class="mobile-menu-group">
         <p class="mobile-menu-label">Nos boutiques</p>
-
         <div class="mobile-submenu">
           <a href="billot-de-daguerre.html">Le Billot de Daguerre</a>
           <a href="boucherie-du-square.html">Boucherie du Square</a>
@@ -892,17 +757,11 @@
       </div>
 
       <div class="mobile-menu-group">
-        <a href="nos-produits.html" class="mobile-menu-main-link">
-          Nos produits
-        </a>
+        <a href="nos-produits.html" class="mobile-menu-main-link">Nos produits</a>
       </div>
 
       <div class="mobile-menu-group">
-        <a
-          href="la-maison.html"
-          class="mobile-menu-main-link"
-          aria-current="page"
-        >
+        <a href="la-maison.html" class="mobile-menu-main-link" aria-current="page">
           La Maison
         </a>
       </div>
@@ -913,20 +772,18 @@
         </a>
       </div>
 
-      <div class="mobile-menu-footer">
-        Le Billot & le Square · Paris
-      </div>
+      <div class="mobile-menu-footer">Le Billot &amp; le Square · Paris</div>
 
     </div>
   </nav>
 
   <main>
 
-    <!-- HERO -->
+    <!-- BANDEAU LA MAISON -->
 
     <section class="house-hero">
       <div class="house-hero-content">
-        <p class="eyebrow">Le Billot & le Square</p>
+        <p class="eyebrow">Le Billot &amp; le Square</p>
         <h1>La Maison</h1>
         <p class="house-hero-subtitle">
           Deux boutiques, une même vision du métier.
@@ -934,116 +791,114 @@
       </div>
     </section>
 
-    <!-- INTRODUCTION CONSERVÉE -->
-<section class="house-intro">
-  <div class="container house-intro-grid">
+    <!-- INTRODUCTION -->
 
-    <div>
-      <p class="section-kicker">La Maison</p>
-      <h2>Deux adresses,<br>une même exigence</h2>
-    </div>
+    <section class="house-intro">
+      <div class="container house-intro-grid">
 
-    <div class="house-intro-copy">
-      <p class="lead">
-        Au Billot de Daguerre comme à la Boucherie du Square, nous partageons
-        le goût du travail bien fait et le plaisir de vous servir.
-      </p>
+        <div>
+          <p class="section-kicker">La Maison</p>
+          <h2>Deux adresses,<br>une même exigence</h2>
+        </div>
 
-      <p>
-        Notre métier commence chez nos fournisseurs, par une sélection exigeante
-        des viandes. Sur le billot, nous apportons le même soin à leur préparation.
-        Parer une pièce, ficeler un rôti ou tailler une côte à l’épaisseur que vous
-        souhaitez : c'est ainsi que s'exprime notre savoir-faire.
-      </p>
+        <div class="house-intro-copy">
+          <p class="lead">
+            Au Billot de Daguerre comme à la Boucherie du Square, nous partageons
+            le goût du travail bien fait et le plaisir de vous servir.
+          </p>
 
-      <p>
-        Au comptoir, le conseil fait partie du métier. Selon le plat que vous
-        préparez et le nombre de convives, nous vous guidons dans le choix du
-        morceau, de la quantité et de la cuisson. Au fil des visites, nous
-        apprenons à connaître vos goûts et vos habitudes et développons la
-        confiance qui vous donne envie de revenir.
-      </p>
-    </div>
+          <p>
+            Notre métier commence chez nos fournisseurs, par une sélection exigeante
+            des viandes. Sur le billot, nous apportons le même soin à leur préparation.
+            Parer une pièce, ficeler un rôti ou tailler une côte à l’épaisseur que vous
+            souhaitez : c'est ainsi que s'exprime notre savoir-faire.
+          </p>
 
-  </div>
-</section>
+          <p>
+            Au comptoir, le conseil fait partie du métier. Selon le plat que vous
+            préparez et le nombre de convives, nous vous guidons dans le choix du
+            morceau, de la quantité et de la cuisson. Au fil des visites, nous
+            apprenons à connaître vos goûts et vos habitudes et développons la
+            confiance qui vous donne envie de revenir.
+          </p>
+        </div>
 
-   <!-- AU COMPTOIR -->
+      </div>
+    </section>
 
-<section class="teams-section" aria-labelledby="titre-au-comptoir">
-  <div class="container">
+    <!-- AU COMPTOIR -->
 
-    <div class="teams-heading" style="margin-bottom: clamp(24px, 4vw, 48px);">
-      <h2 id="titre-au-comptoir">Au comptoir</h2>
-    </div>
+    <section class="teams-section" aria-labelledby="titre-au-comptoir">
+      <div class="container">
 
-    <img
-      src="images/au-comptoir.jpg"
-      alt="Un boucher présente une pièce de bœuf entre ses mains, au-dessus du billot où repose son couteau."
-      width="1800"
-      height="1202"
-      loading="lazy"
-      decoding="async"
-      style="display: block; width: 100%; height: auto;"
-    >
+        <div class="teams-heading">
+          <h2 id="titre-au-comptoir">Au comptoir</h2>
+        </div>
 
-  </div>
-</section>
+        <img
+          class="comptoir-photo"
+          src="images/au-comptoir.jpg"
+          alt="Un boucher présente une pièce de bœuf entre ses mains, au-dessus du billot où repose son couteau."
+          width="1800"
+          height="1202"
+          loading="lazy"
+          decoding="async"
+        >
+
+      </div>
+    </section>
 
     <!-- NOTRE HISTOIRE -->
 
-<section class="history-section">
-  <div class="container">
+    <section class="history-section">
+      <div class="container">
 
-    <div class="history-heading">
-      <p class="section-kicker">Notre histoire</p>
-      <h2>Une Maison qui s’écrit<br>au fil des années</h2>
-      <p>
-        Notre histoire commence rue du Commerce et se poursuit rue Daguerre.
-        Ces deux rues incarnent ce que nous aimons à Paris : des quartiers vivants
-        où les commerces de bouche font partie du quotidien des habitants.
-      </p>
-    </div>
+        <div class="history-heading">
+          <p class="section-kicker">Notre histoire</p>
+          <h2>Une Maison qui s’écrit<br>au fil des années</h2>
+          <p>
+            Notre histoire commence rue du Commerce et se poursuit rue Daguerre.
+            Ces deux rues incarnent ce que nous aimons à Paris : des quartiers vivants
+            où les commerces de bouche font partie du quotidien des habitants.
+          </p>
+        </div>
 
-    <div class="timeline">
+        <div class="timeline">
 
-      <article class="timeline-item">
-        <span class="timeline-date">2019</span>
-        <h3>Boucherie du Square</h3>
-        <p>
-          Au 85 rue du Commerce, dans le 15ᵉ arrondissement, nous reprenons
-          une boucherie de quartier et ouvrons notre première adresse :
-          la Boucherie du Square après une rénovation de fond en comble de la boutique.
-        </p>
-      </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2019</span>
+            <h3>Boucherie du Square</h3>
+            <p>
+              Au 85 rue du Commerce, dans le 15ᵉ arrondissement, nous reprenons
+              une boucherie de quartier et ouvrons notre première adresse :
+              la Boucherie du Square après une rénovation de fond en comble de la boutique.
+            </p>
+          </article>
 
-      <article class="timeline-item">
-        <span class="timeline-date">2023</span>
-        <h3>Le Billot de Daguerre</h3>
-        <p>
-          Au 10 bis rue Daguerre, dans le 14ᵉ arrondissement, nous reprenons
-          l’une des dernières boucheries chevalines de Paris. La boutique
-          ferme pendant deux mois, le temps de réaménager entièrement les lieux.
-          Elle rouvre sous un nouveau nom : Le Billot de Daguerre.
-        </p>
-      </article>
+          <article class="timeline-item">
+            <span class="timeline-date">2023</span>
+            <h3>Le Billot de Daguerre</h3>
+            <p>
+              Au 10 bis rue Daguerre, dans le 14ᵉ arrondissement, nous reprenons
+              l’une des dernières boucheries chevalines de Paris. La boutique
+              ferme pendant deux mois, le temps de réaménager entièrement les lieux.
+              Elle rouvre sous un nouveau nom : Le Billot de Daguerre.
+            </p>
+          </article>
 
-    </div>
-
-  </div>
-</section>
+        </div>
+      </div>
+    </section>
 
     <!-- NOTRE MANIÈRE DE TRAVAILLER -->
 
-    <section class="values-section">
+    <section class="values-section" aria-labelledby="titre-maniere-de-travailler">
       <div class="container">
 
         <div class="values-heading">
-
-          <div>
-            <p class="section-kicker">Notre manière de travailler</p>
-            <h2>Le métier, simplement</h2>
-          </div>
+          <p class="section-kicker">Notre manière de travailler</p>
+          <h2 id="titre-maniere-de-travailler">Le métier, simplement</h2>
+        </div>
 
         <div class="values-grid">
 
@@ -1077,14 +932,13 @@
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- PIED DE PAGE -->
 
   <footer class="footer">
 
     <div class="container footer-top">
-
       <div>
-        <div class="footer-brand">Le Billot & le Square</div>
+        <div class="footer-brand">Le Billot &amp; le Square</div>
         <p>
           Deux boucheries artisanales à Paris,<br>
           dans les 14ᵉ et 15ᵉ arrondissements.
@@ -1098,11 +952,10 @@
         <a href="la-maison.html">La Maison</a>
         <a href="carte-de-saison.html">Notre carte de saison</a>
       </nav>
-
     </div>
 
     <div class="container footer-bottom">
-      <span>© Le Billot & le Square</span>
+      <span>© Le Billot &amp; le Square</span>
       <div>
         <a href="#">Mentions légales</a>
         <a href="#">Confidentialité</a>
@@ -1169,11 +1022,7 @@
       }
 
       if (event.key === "Tab") {
-        const items = [
-          menuToggle,
-          ...mobileMenu.querySelectorAll("a")
-        ];
-
+        const items = [menuToggle, ...mobileMenu.querySelectorAll("a")];
         const first = items[0];
         const last = items[items.length - 1];
 
