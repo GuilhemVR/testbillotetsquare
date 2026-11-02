@@ -473,74 +473,48 @@
       font-size: 13px;
     }
 
-    /* NOTRE MANIÈRE DE TRAVAILLER */
+   <!-- NOTRE MANIÈRE DE TRAVAILLER -->
 
-    .values-section {
-      padding: 115px 0;
-      background: var(--ivory);
-      color: var(--text);
-    }
+<section class="values-section">
+  <div class="container">
 
-    .values-heading {
-      display: grid;
-      grid-template-columns: 1fr .8fr;
-      gap: 80px;
-      align-items: end;
-      margin-bottom: 70px;
-    }
+    <div class="values-heading">
+      <div>
+        <p class="section-kicker">Notre manière de travailler</p>
+        <h2>Le métier, simplement</h2>
+      </div>
+    </div>
 
-    .values-heading h2 {
-      font-size: clamp(50px, 5vw, 76px);
-    }
+    <div class="values-grid">
 
-    .values-heading > p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.8;
-    }
+      <article class="value-item">
+        <span class="value-number">01</span>
+        <h3>Sélection</h3>
+        <p>Choisir les produits avec attention et exigence.</p>
+      </article>
 
-    .values-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
-      border-top: 1px solid rgba(24,21,18,.16);
-    }
+      <article class="value-item">
+        <span class="value-number">02</span>
+        <h3>Préparation</h3>
+        <p>Travailler chaque morceau avec précision.</p>
+      </article>
 
-    .value-item {
-      padding: 35px 28px 15px 0;
-      border-right: 1px solid rgba(24,21,18,.16);
-    }
+      <article class="value-item">
+        <span class="value-number">03</span>
+        <h3>Conseil</h3>
+        <p>Orienter chaque client selon ses envies et ses besoins.</p>
+      </article>
 
-    .value-item:not(:first-child) {
-      padding-left: 28px;
-    }
+      <article class="value-item">
+        <span class="value-number">04</span>
+        <h3>Proximité</h3>
+        <p>Faire vivre une relation de confiance dans chaque quartier.</p>
+      </article>
 
-    .value-item:last-child {
-      border-right: 0;
-    }
+    </div>
 
-    .value-number {
-      display: block;
-      margin-bottom: 35px;
-      color: #81796f;
-      font-size: 10px;
-      letter-spacing: .17em;
-    }
-
-    .value-item h3 {
-      margin: 0 0 14px;
-      color: var(--text);
-      font-family: var(--serif);
-      font-size: 34px;
-      font-weight: 400;
-    }
-
-    .value-item p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.8;
-    }
+  </div>
+</section>
 
     /* FOOTER */
 
