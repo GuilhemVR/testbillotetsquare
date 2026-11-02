@@ -4,21 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Maison — Le Billot &amp; le Square</title>
-  <meta
-    name="description"
-    content="Découvrez l’histoire, la vision et les équipes du Billot de Daguerre et de la Boucherie du Square à Paris."
-  >
+  <meta name="description" content="Découvrez l’histoire, la vision et les équipes du Billot de Daguerre et de la Boucherie du Square à Paris.">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Montserrat:wght@400;500;600&amp;display=swap" rel="stylesheet">
 
   <style>
-    /* BASE */
-
     :root {
       --paper: #f8f5ef;
       --ivory: #eee9e0;
@@ -31,50 +23,43 @@
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-
     body {
       margin: 0;
-      font-family: var(--sans);
       color: var(--text);
       background: var(--paper);
+      font-family: var(--sans);
     }
 
+    main { display: block; width: 100%; }
     a { color: inherit; }
     button { font: inherit; }
-
-    a:focus-visible,
-    button:focus-visible {
+    a:focus-visible, button:focus-visible {
       outline: 2px solid currentColor;
       outline-offset: 5px;
     }
 
     .container {
       width: min(1180px, calc(100% - 48px));
-      margin: 0 auto;
+      margin-inline: auto;
     }
 
-    .eyebrow,
-    .section-kicker {
+    .eyebrow, .section-kicker {
       margin: 0 0 18px;
-      text-transform: uppercase;
-      letter-spacing: .30em;
       font-size: 11px;
       font-weight: 500;
+      letter-spacing: .30em;
+      text-transform: uppercase;
     }
 
-    /* EN-TÊTE ET NAVIGATION */
+    /* EN-TÊTE */
 
-    .internal-header {
-      background: var(--dark);
-      color: #fff;
-    }
-
+    .internal-header { background: var(--dark); color: #fff; }
     .site-header {
       position: relative;
       z-index: 20;
       width: min(1400px, calc(100% - 72px));
       min-height: 92px;
-      margin: 0 auto;
+      margin-inline: auto;
       display: grid;
       grid-template-columns: minmax(0, 1.1fr) auto auto;
       align-items: center;
@@ -85,19 +70,17 @@
     .brand {
       display: inline-flex;
       flex-direction: column;
+      min-width: 0;
       color: #fff;
       text-decoration: none;
       line-height: 1;
-      min-width: 0;
     }
-
     .brand-main {
       font-family: var(--serif);
       font-size: 30px;
       font-weight: 500;
       letter-spacing: -.02em;
     }
-
     .brand-sub {
       margin-top: 8px;
       font-size: 9px;
@@ -106,44 +89,22 @@
       opacity: .72;
     }
 
-    .main-nav {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .main-nav > a,
-    .nav-dropdown-button {
-      color: #fff;
-      background: none;
+    .main-nav { display: flex; align-items: center; gap: 30px; }
+    .main-nav > a, .nav-dropdown-button {
       border: 0;
       padding: 0;
+      background: none;
+      color: #fff;
       font-family: var(--serif);
       font-size: 16px;
       text-decoration: none;
-      cursor: pointer;
       white-space: nowrap;
+      cursor: pointer;
     }
-
-    .main-nav > a:hover,
-    .nav-dropdown-button:hover { opacity: .70; }
-
-    .nav-dropdown {
-      position: relative;
-      padding: 35px 0;
-    }
-
-    .nav-dropdown-button {
-      display: flex;
-      align-items: center;
-      gap: 7px;
-    }
-
-    .nav-arrow {
-      font-family: Arial, sans-serif;
-      font-size: 13px;
-      opacity: .8;
-    }
+    .main-nav > a:hover, .nav-dropdown-button:hover { opacity: .7; }
+    .nav-dropdown { position: relative; padding: 35px 0; }
+    .nav-dropdown-button { display: flex; align-items: center; gap: 7px; }
+    .nav-arrow { font: 13px Arial, sans-serif; opacity: .8; }
 
     .dropdown-menu {
       position: absolute;
@@ -158,23 +119,19 @@
       transform: translateY(-8px);
       transition: opacity .18s, transform .18s, visibility .18s;
     }
-
     .nav-dropdown:hover .dropdown-menu,
     .nav-dropdown:focus-within .dropdown-menu {
       opacity: 1;
       visibility: visible;
-      transform: translateY(0);
+      transform: none;
     }
-
     .dropdown-menu a {
       display: block;
       padding: 14px 15px;
       color: #fff;
       text-decoration: none;
-      font-family: var(--serif);
-      font-size: 17px;
+      font: 17px var(--serif);
     }
-
     .dropdown-menu a:hover { background: rgba(255,255,255,.08); }
 
     .header-cta {
@@ -188,7 +145,6 @@
       text-decoration: none;
       white-space: nowrap;
     }
-
     .header-cta span { margin-left: 12px; }
 
     .menu-toggle {
@@ -207,7 +163,6 @@
       flex-direction: column;
       gap: 5px;
     }
-
     .menu-toggle span {
       display: block;
       width: 21px;
@@ -215,17 +170,13 @@
       background: #fff;
       transition: transform .25s, opacity .25s;
     }
-
     .menu-toggle.is-open span:nth-child(1) {
       transform: translateY(6.5px) rotate(45deg);
     }
-
     .menu-toggle.is-open span:nth-child(2) { opacity: 0; }
-
     .menu-toggle.is-open span:nth-child(3) {
       transform: translateY(-6.5px) rotate(-45deg);
     }
-
     .mobile-menu { display: none; }
 
     /* BANDEAU LA MAISON */
@@ -242,23 +193,15 @@
       background-position: center;
       color: #fff;
     }
-
-    .house-hero-content {
-      width: min(1180px, calc(100% - 48px));
-      margin: 0 auto;
-      padding-bottom: 70px;
-    }
-
+    .house-hero-content { padding-bottom: 70px; }
     .house-hero h1 {
       margin: 0;
-      color: #fff;
       font-family: var(--serif);
       font-size: clamp(72px, 8vw, 118px);
       line-height: .88;
       font-weight: 400;
       letter-spacing: -.045em;
     }
-
     .house-hero-subtitle {
       max-width: 680px;
       margin-top: 25px;
@@ -270,21 +213,14 @@
 
     /* INTRODUCTION */
 
-    .house-intro {
-      padding: 110px 0;
-      background: var(--paper);
-    }
-
+    .house-intro { padding: 110px 0; background: var(--paper); }
     .house-intro-grid {
       display: grid;
       grid-template-columns: .8fr 1.2fr;
       gap: 100px;
       align-items: start;
     }
-
-    .house-intro h2,
-    .teams-heading h2,
-    .values-heading h2 {
+    .house-intro h2, .values-heading h2 {
       margin: 0;
       color: var(--text);
       font-family: var(--serif);
@@ -293,15 +229,8 @@
       font-weight: 400;
       letter-spacing: -.035em;
     }
-
     .house-intro-copy { max-width: 680px; }
-
-    .house-intro-copy p {
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.9;
-    }
-
+    .house-intro-copy p { color: var(--muted); font-size: 15px; line-height: 1.9; }
     .house-intro-copy .lead {
       margin: 0 0 26px;
       font-family: var(--serif);
@@ -310,48 +239,44 @@
       color: #28231f;
     }
 
-    <!-- AU COMPTOIR -->
+    /* AU COMPTOIR : LA PHOTO OCCUPE LE BANDEAU ENTIER */
 
-<section
-  aria-labelledby="titre-au-comptoir"
-  style="position: relative; width: 100%; height: clamp(240px, 30vw, 360px); overflow: hidden; background: #181512;"
->
-  <img
-    src="images/au-comptoir.jpg"
-    alt="Les mains du boucher présentent une pièce de bœuf sur le billot."
-    width="1800"
-    height="1202"
-    loading="lazy"
-    decoding="async"
-    style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 48% 45%;"
-  >
+    .comptoir-banner {
+      width: 100%;
+      height: clamp(145px, 13vw, 215px);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: flex-end;
+      background-color: #181512;
+      background-image:
+        linear-gradient(90deg, rgba(0,0,0,.38), transparent 55%),
+        url("images/au-comptoir.jpg");
+      background-size: cover;
+      background-position: center 43%;
+      background-repeat: no-repeat;
+    }
+    .comptoir-banner h2 {
+      margin: 0 0 18px;
+      color: #fff;
+      font-family: var(--serif);
+      font-size: clamp(28px, 3vw, 42px);
+      font-weight: 400;
+      line-height: 1;
+    }
 
-  <div
-    style="position: absolute; inset: 0; display: flex; align-items: flex-end; background: linear-gradient(35deg, rgba(0,0,0,.46), transparent 45%);"
-  >
-    <div class="container" style="padding-bottom: clamp(20px, 3vw, 38px);">
-      <h2
-        id="titre-au-comptoir"
-        style="margin: 0; color: #fff; font-family: var(--serif); font-size: clamp(32px, 3.5vw, 50px); font-weight: 400; line-height: 1; letter-spacing: -.025em;"
-      >
-        Au comptoir
-      </h2>
-    </div>
-  </div>
-</section>
-    /* NOTRE HISTOIRE : DEUX DATES */
+    /* NOTRE HISTOIRE : FOND NOIR ET DEUX COLONNES */
 
     .history-section {
+      width: 100%;
       padding: 120px 0;
       background: #11100e;
       color: #fff;
     }
-
     .history-heading {
       max-width: 780px;
       margin-bottom: 70px;
     }
-
     .history-heading h2 {
       margin: 0;
       color: #fff;
@@ -361,36 +286,29 @@
       font-weight: 400;
       letter-spacing: -.035em;
     }
-
     .history-heading > p:last-child {
       margin-top: 25px;
       color: #bbb7b2;
       line-height: 1.8;
     }
-
     .timeline {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
       border-top: 1px solid rgba(255,255,255,.18);
     }
-
     .timeline-item {
       padding: 40px 42px 20px 0;
       border-right: 1px solid rgba(255,255,255,.18);
     }
-
     .timeline-item:not(:first-child) { padding-left: 42px; }
     .timeline-item:last-child { border-right: 0; }
-
     .timeline-date {
       display: block;
       margin-bottom: 40px;
       color: #aaa49d;
       font-size: 10px;
       letter-spacing: .18em;
-      text-transform: uppercase;
     }
-
     .timeline-item h3 {
       margin: 0 0 15px;
       color: #fff;
@@ -398,7 +316,6 @@
       font-size: 36px;
       font-weight: 400;
     }
-
     .timeline-item p {
       margin: 0;
       color: #bbb7b2;
@@ -406,34 +323,26 @@
       font-size: 13px;
     }
 
-    /* NOTRE MANIÈRE DE TRAVAILLER : QUATRE COLONNES */
+    /* NOTRE MANIÈRE DE TRAVAILLER */
 
     .values-section {
       padding: 115px 0;
       background: var(--ivory);
       color: var(--text);
     }
-
     .values-heading { margin-bottom: 70px; }
-
-    .values-heading h2 {
-      font-size: clamp(50px, 5vw, 76px);
-    }
-
+    .values-heading h2 { font-size: clamp(50px, 5vw, 76px); }
     .values-grid {
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       border-top: 1px solid rgba(24,21,18,.16);
     }
-
     .value-item {
       padding: 35px 28px 15px 0;
       border-right: 1px solid rgba(24,21,18,.16);
     }
-
     .value-item:not(:first-child) { padding-left: 28px; }
     .value-item:last-child { border-right: 0; }
-
     .value-number {
       display: block;
       margin-bottom: 35px;
@@ -441,7 +350,6 @@
       font-size: 10px;
       letter-spacing: .17em;
     }
-
     .value-item h3 {
       margin: 0 0 14px;
       color: var(--text);
@@ -449,7 +357,6 @@
       font-size: 34px;
       font-weight: 400;
     }
-
     .value-item p {
       margin: 0;
       color: var(--muted);
@@ -459,38 +366,17 @@
 
     /* PIED DE PAGE */
 
-    .footer {
-      padding: 80px 0 26px;
-      background: var(--dark);
-      color: #fff;
-    }
-
+    .footer { padding: 80px 0 26px; background: var(--dark); color: #fff; }
     .footer-top {
       display: flex;
       justify-content: space-between;
       gap: 50px;
       padding-bottom: 60px;
     }
-
-    .footer-brand {
-      font-family: var(--serif);
-      font-size: 34px;
-    }
-
-    .footer-top p {
-      color: rgba(255,255,255,.58);
-      line-height: 1.7;
-    }
-
-    .footer-nav {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .footer-nav a,
-    .footer-bottom a { text-decoration: none; }
-
+    .footer-brand { font-family: var(--serif); font-size: 34px; }
+    .footer-top p { color: rgba(255,255,255,.58); line-height: 1.7; }
+    .footer-nav { display: flex; flex-direction: column; gap: 14px; }
+    .footer-nav a, .footer-bottom a { text-decoration: none; }
     .footer-bottom {
       display: flex;
       justify-content: space-between;
@@ -500,42 +386,22 @@
       font-size: 11px;
       color: rgba(255,255,255,.45);
     }
+    .footer-bottom div { display: flex; gap: 25px; }
 
-    .footer-bottom div {
-      display: flex;
-      gap: 25px;
-    }
-
-    /* MENU MOBILE */
+    /* NAVIGATION MOBILE */
 
     @media (max-width: 1100px) {
-      .site-header {
-        grid-template-columns: minmax(0, 1fr) 46px;
-        gap: 16px;
-      }
-
-      .site-header .brand {
-        grid-column: 1;
-        grid-row: 1;
-      }
-
-      .main-nav,
-      .header-cta { display: none; }
-
+      .site-header { grid-template-columns: minmax(0, 1fr) 46px; gap: 16px; }
+      .site-header .brand { grid-column: 1; grid-row: 1; }
+      .main-nav, .header-cta { display: none; }
       .site-header .menu-toggle {
         display: flex;
         grid-column: 2;
         grid-row: 1;
         justify-self: end;
       }
-
       body.menu-open { overflow: hidden; }
-
-      body.menu-open .internal-header {
-        position: relative;
-        z-index: 1001;
-      }
-
+      body.menu-open .internal-header { position: relative; z-index: 1001; }
       body.menu-open .site-header { z-index: 1002; }
 
       .mobile-menu {
@@ -553,18 +419,8 @@
         transition: opacity .25s, visibility .25s, transform .25s;
         overflow-y: auto;
       }
-
-      .mobile-menu.is-open {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-      }
-
-      .mobile-menu-inner {
-        width: min(100%, 620px);
-        margin: 0 auto;
-      }
-
+      .mobile-menu.is-open { opacity: 1; visibility: visible; transform: none; }
+      .mobile-menu-inner { width: min(100%, 620px); margin-inline: auto; }
       .mobile-menu-label {
         margin: 0 0 16px;
         color: #bcb5ac;
@@ -572,17 +428,11 @@
         text-transform: uppercase;
         letter-spacing: .25em;
       }
-
       .mobile-menu-group {
         padding: 25px 0;
         border-bottom: 1px solid rgba(255,255,255,.14);
       }
-
-      .mobile-menu a {
-        color: #fff;
-        text-decoration: none;
-      }
-
+      .mobile-menu a { color: #fff; text-decoration: none; }
       .mobile-menu-main-link {
         display: block;
         padding: 9px 0;
@@ -590,7 +440,6 @@
         font-size: clamp(35px, 8vw, 48px);
         line-height: 1;
       }
-
       .mobile-submenu {
         display: flex;
         flex-direction: column;
@@ -599,12 +448,7 @@
         padding-left: 17px;
         border-left: 1px solid rgba(255,255,255,.25);
       }
-
-      .mobile-submenu a {
-        font-size: 14px;
-        line-height: 1.5;
-      }
-
+      .mobile-submenu a { font-size: 14px; line-height: 1.5; }
       .mobile-menu-footer {
         margin-top: 45px;
         color: #bcb5ac;
@@ -614,80 +458,43 @@
       }
     }
 
-    /* TABLETTE */
-
     @media (max-width: 900px) {
-      .house-intro-grid {
-        grid-template-columns: 1fr;
-        gap: 45px;
-      }
-
+      .house-intro-grid { grid-template-columns: 1fr; gap: 45px; }
       .timeline { grid-template-columns: 1fr; }
-
-      .timeline-item,
-      .timeline-item:not(:first-child) {
+      .timeline-item, .timeline-item:not(:first-child) {
         padding: 35px 0;
         border-right: 0;
         border-bottom: 1px solid rgba(255,255,255,.18);
       }
-
-      .values-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
+      .values-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .value-item:nth-child(2) { border-right: 0; }
       .value-item:nth-child(3) { padding-left: 0; }
     }
 
-    /* MOBILE */
-
     @media (max-width: 720px) {
-      .container,
-      .house-hero-content {
-        width: calc(100% - 32px);
-      }
-
-      .site-header {
-        width: calc(100% - 32px);
-        min-height: 76px;
-      }
-
+      .container { width: calc(100% - 32px); }
+      .site-header { width: calc(100% - 32px); min-height: 76px; }
       .brand-main { font-size: 24px; }
       .brand-sub { display: none; }
-
-      .footer-top,
-      .footer-bottom {
+      .footer-top, .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
       }
-
       .footer-bottom div { flex-wrap: wrap; }
     }
 
     @media (max-width: 600px) {
-      .site-header {
-        grid-template-columns: minmax(0, 1fr) 42px;
-      }
-
+      .site-header { grid-template-columns: minmax(0, 1fr) 42px; }
       .menu-toggle { width: 42px; height: 42px; }
       .mobile-menu { padding: 105px 20px 36px; }
       .house-hero { min-height: 430px; }
       .house-hero-content { padding-bottom: 45px; }
       .house-hero h1 { font-size: clamp(60px, 18vw, 84px); }
       .house-hero-subtitle { font-size: 23px; }
-
-      .house-intro,
-      .teams-section,
-      .history-section,
-      .values-section { padding: 75px 0; }
-
-      .teams-heading h2,
+      .house-intro, .history-section, .values-section { padding: 75px 0; }
       .history-heading h2 { font-size: clamp(40px, 12vw, 56px); }
-
       .values-grid { grid-template-columns: 1fr; }
-
-      .value-item,
-      .value-item:not(:first-child) {
+      .value-item, .value-item:not(:first-child) {
         padding: 28px 0;
         border-right: 0;
         border-bottom: 1px solid rgba(24,21,18,.16);
@@ -696,10 +503,7 @@
 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
-
-      .mobile-menu,
-      .menu-toggle span,
-      .dropdown-menu { transition: none; }
+      .mobile-menu, .menu-toggle span, .dropdown-menu { transition: none; }
     }
   </style>
 </head>
@@ -710,7 +514,6 @@
 
   <div class="internal-header">
     <header class="site-header">
-
       <a href="index.html" class="brand">
         <span class="brand-main">Le Billot &amp; le Square</span>
         <span class="brand-sub">Boucheries artisanales · Paris</span>
@@ -719,15 +522,13 @@
       <nav class="main-nav" aria-label="Navigation principale">
         <div class="nav-dropdown">
           <button class="nav-dropdown-button" type="button">
-            Nos boutiques
-            <span class="nav-arrow" aria-hidden="true">⌄</span>
+            Nos boutiques <span class="nav-arrow" aria-hidden="true">⌄</span>
           </button>
           <div class="dropdown-menu">
             <a href="billot-de-daguerre.html">Le Billot de Daguerre</a>
             <a href="boucherie-du-square.html">Boucherie du Square</a>
           </div>
         </div>
-
         <a href="nos-produits.html">Nos produits</a>
         <a href="la-maison.html" aria-current="page">La Maison</a>
         <a href="carte-de-saison.html">Notre carte de saison</a>
@@ -737,19 +538,10 @@
         Voir nos produits <span aria-hidden="true">→</span>
       </a>
 
-      <button
-        class="menu-toggle"
-        type="button"
-        id="menuToggle"
-        aria-label="Ouvrir le menu"
-        aria-expanded="false"
-        aria-controls="mobileMenu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <button class="menu-toggle" type="button" id="menuToggle"
+              aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
       </button>
-
     </header>
   </div>
 
@@ -757,7 +549,6 @@
 
   <nav class="mobile-menu" id="mobileMenu" aria-label="Navigation mobile">
     <div class="mobile-menu-inner">
-
       <div class="mobile-menu-group">
         <p class="mobile-menu-label">Nos boutiques</p>
         <div class="mobile-submenu">
@@ -765,25 +556,16 @@
           <a href="boucherie-du-square.html">Boucherie du Square</a>
         </div>
       </div>
-
       <div class="mobile-menu-group">
         <a href="nos-produits.html" class="mobile-menu-main-link">Nos produits</a>
       </div>
-
       <div class="mobile-menu-group">
-        <a href="la-maison.html" class="mobile-menu-main-link" aria-current="page">
-          La Maison
-        </a>
+        <a href="la-maison.html" class="mobile-menu-main-link" aria-current="page">La Maison</a>
       </div>
-
       <div class="mobile-menu-group">
-        <a href="carte-de-saison.html" class="mobile-menu-main-link">
-          Notre carte de saison
-        </a>
+        <a href="carte-de-saison.html" class="mobile-menu-main-link">Notre carte de saison</a>
       </div>
-
       <div class="mobile-menu-footer">Le Billot &amp; le Square · Paris</div>
-
     </div>
   </nav>
 
@@ -792,12 +574,10 @@
     <!-- BANDEAU LA MAISON -->
 
     <section class="house-hero">
-      <div class="house-hero-content">
+      <div class="container house-hero-content">
         <p class="eyebrow">Le Billot &amp; le Square</p>
         <h1>La Maison</h1>
-        <p class="house-hero-subtitle">
-          Deux boutiques, une même vision du métier.
-        </p>
+        <p class="house-hero-subtitle">Deux boutiques, une même vision du métier.</p>
       </div>
     </section>
 
@@ -805,7 +585,6 @@
 
     <section class="house-intro">
       <div class="container house-intro-grid">
-
         <div>
           <p class="section-kicker">La Maison</p>
           <h2>Deux adresses,<br>une même exigence</h2>
@@ -816,14 +595,12 @@
             Au Billot de Daguerre comme à la Boucherie du Square, nous partageons
             le goût du travail bien fait et le plaisir de vous servir.
           </p>
-
           <p>
             Notre métier commence chez nos fournisseurs, par une sélection exigeante
             des viandes. Sur le billot, nous apportons le même soin à leur préparation.
             Parer une pièce, ficeler un rôti ou tailler une côte à l’épaisseur que vous
             souhaitez : c'est ainsi que s'exprime notre savoir-faire.
           </p>
-
           <p>
             Au comptoir, le conseil fait partie du métier. Selon le plat que vous
             préparez et le nombre de convives, nous vous guidons dans le choix du
@@ -832,29 +609,14 @@
             confiance qui vous donne envie de revenir.
           </p>
         </div>
-
       </div>
     </section>
 
-    <!-- AU COMPTOIR -->
+    <!-- AU COMPTOIR : BANDEAU BORD À BORD -->
 
-    <section class="teams-section" aria-labelledby="titre-au-comptoir">
+    <section class="comptoir-banner" aria-labelledby="titre-au-comptoir">
       <div class="container">
-
-        <div class="teams-heading">
-          <h2 id="titre-au-comptoir">Au comptoir</h2>
-        </div>
-
-        <img
-          class="comptoir-photo"
-          src="images/au-comptoir.jpg"
-          alt="Un boucher présente une pièce de bœuf entre ses mains, au-dessus du billot où repose son couteau."
-          width="1800"
-          height="1202"
-          loading="lazy"
-          decoding="async"
-        >
-
+        <h2 id="titre-au-comptoir">Au comptoir</h2>
       </div>
     </section>
 
@@ -862,7 +624,6 @@
 
     <section class="history-section">
       <div class="container">
-
         <div class="history-heading">
           <p class="section-kicker">Notre histoire</p>
           <h2>Une Maison qui s’écrit<br>au fil des années</h2>
@@ -874,7 +635,6 @@
         </div>
 
         <div class="timeline">
-
           <article class="timeline-item">
             <span class="timeline-date">2019</span>
             <h3>Boucherie du Square</h3>
@@ -895,47 +655,40 @@
               Elle rouvre sous un nouveau nom : Le Billot de Daguerre.
             </p>
           </article>
-
         </div>
       </div>
     </section>
 
     <!-- NOTRE MANIÈRE DE TRAVAILLER -->
 
-    <section class="values-section" aria-labelledby="titre-maniere-de-travailler">
+    <section class="values-section">
       <div class="container">
-
         <div class="values-heading">
           <p class="section-kicker">Notre manière de travailler</p>
-          <h2 id="titre-maniere-de-travailler">Le métier, simplement</h2>
+          <h2>Le métier, simplement</h2>
         </div>
 
         <div class="values-grid">
-
           <article class="value-item">
             <span class="value-number">01</span>
             <h3>Sélection</h3>
             <p>Choisir les produits avec attention et exigence.</p>
           </article>
-
           <article class="value-item">
             <span class="value-number">02</span>
             <h3>Préparation</h3>
             <p>Travailler chaque morceau avec précision.</p>
           </article>
-
           <article class="value-item">
             <span class="value-number">03</span>
             <h3>Conseil</h3>
             <p>Orienter chaque client selon ses envies et ses besoins.</p>
           </article>
-
           <article class="value-item">
             <span class="value-number">04</span>
             <h3>Proximité</h3>
             <p>Faire vivre une relation de confiance dans chaque quartier.</p>
           </article>
-
         </div>
       </div>
     </section>
@@ -945,7 +698,6 @@
   <!-- PIED DE PAGE -->
 
   <footer class="footer">
-
     <div class="container footer-top">
       <div>
         <div class="footer-brand">Le Billot &amp; le Square</div>
@@ -971,10 +723,7 @@
         <a href="#">Confidentialité</a>
       </div>
     </div>
-
   </footer>
-
-  <!-- FONCTIONNEMENT DU MENU MOBILE -->
 
   <script>
     const menuToggle = document.getElementById("menuToggle");
@@ -985,32 +734,23 @@
       menuToggle.classList.remove("is-open");
       mobileMenu.classList.remove("is-open");
       document.body.classList.remove("menu-open");
-
       menuToggle.setAttribute("aria-expanded", "false");
       menuToggle.setAttribute("aria-label", "Ouvrir le menu");
-
-      if (returnFocus && mobileBreakpoint.matches) {
-        menuToggle.focus();
-      }
+      if (returnFocus && mobileBreakpoint.matches) menuToggle.focus();
     }
 
     function openMobileMenu() {
       if (!mobileBreakpoint.matches) return;
-
       menuToggle.classList.add("is-open");
       mobileMenu.classList.add("is-open");
       document.body.classList.add("menu-open");
-
       menuToggle.setAttribute("aria-expanded", "true");
       menuToggle.setAttribute("aria-label", "Fermer le menu");
-
       mobileMenu.querySelector("a").focus();
     }
 
     menuToggle.addEventListener("click", function () {
-      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
-
-      if (isOpen) {
+      if (menuToggle.getAttribute("aria-expanded") === "true") {
         closeMobileMenu(true);
       } else {
         openMobileMenu();
@@ -1018,9 +758,7 @@
     });
 
     mobileMenu.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", function () {
-        closeMobileMenu();
-      });
+      link.addEventListener("click", function () { closeMobileMenu(); });
     });
 
     document.addEventListener("keydown", function (event) {
@@ -1032,24 +770,21 @@
       }
 
       if (event.key === "Tab") {
-        const items = [menuToggle, ...mobileMenu.querySelectorAll("a")];
-        const first = items[0];
-        const last = items[items.length - 1];
+        const links = mobileMenu.querySelectorAll("a");
+        const last = links[links.length - 1];
 
-        if (event.shiftKey && document.activeElement === first) {
+        if (event.shiftKey && document.activeElement === menuToggle) {
           event.preventDefault();
           last.focus();
         } else if (!event.shiftKey && document.activeElement === last) {
           event.preventDefault();
-          first.focus();
+          menuToggle.focus();
         }
       }
     });
 
     window.addEventListener("resize", function () {
-      if (!mobileBreakpoint.matches) {
-        closeMobileMenu();
-      }
+      if (!mobileBreakpoint.matches) closeMobileMenu();
     });
   </script>
 
