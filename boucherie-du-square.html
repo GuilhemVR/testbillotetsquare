@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Boucherie du Square — Boucherie artisanale Paris 15e</title>
-
   <meta
     name="description"
     content="Découvrez la Boucherie du Square, votre boucherie artisanale au cœur du 15e arrondissement de Paris."
   >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Montserrat:wght@400;500;600&amp;display=swap"
     rel="stylesheet"
   >
-
   <link rel="stylesheet" href="style.css">
 
-
   <style>
-
-    /* =========================================================
-       PAGE SQUARE
-    ========================================================= */
+    /* EN-TÊTE */
 
     .internal-header {
       background: #0c0b0a;
@@ -45,15 +27,10 @@
     }
 
     .internal-header .site-header {
-      border-bottom:
-        1px solid
-        rgba(255,255,255,.16);
+      border-bottom: 1px solid rgba(255,255,255,.16);
     }
 
-
-    /* =========================================================
-       MENU HAMBURGER MOBILE
-    ========================================================= */
+    /* MENU MOBILE */
 
     .menu-toggle {
       display: none;
@@ -76,15 +53,11 @@
       width: 21px;
       height: 1.5px;
       background: white;
-      transition:
-        transform .25s ease,
-        opacity .25s ease;
+      transition: transform .25s ease, opacity .25s ease;
     }
 
     .menu-toggle.is-open span:nth-child(1) {
-      transform:
-        translateY(6.5px)
-        rotate(45deg);
+      transform: translateY(6.5px) rotate(45deg);
     }
 
     .menu-toggle.is-open span:nth-child(2) {
@@ -92,40 +65,26 @@
     }
 
     .menu-toggle.is-open span:nth-child(3) {
-      transform:
-        translateY(-6.5px)
-        rotate(-45deg);
+      transform: translateY(-6.5px) rotate(-45deg);
     }
 
     .mobile-menu {
       display: none;
     }
 
-
-    /* =========================================================
-       PHOTO D'OUVERTURE
-    ========================================================= */
+    /* PHOTO D’OUVERTURE */
 
     .shop-hero {
       position: relative;
       min-height: 430px;
-
       background-image:
-        linear-gradient(
-          180deg,
-          rgba(0,0,0,.05),
-          rgba(0,0,0,.12)
-        ),
+        linear-gradient(180deg, rgba(0,0,0,.05), rgba(0,0,0,.12)),
         url("images/square-facade.jpg");
-
       background-size: cover;
       background-position: center top;
     }
 
-
-    /* =========================================================
-       PRESENTATION
-    ========================================================= */
+    /* PRÉSENTATION */
 
     .shop-intro {
       padding: 105px 0;
@@ -149,12 +108,7 @@
 
     .shop-intro h1 {
       margin: 0;
-
-      font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(58px, 6vw, 86px);
       font-weight: 400;
       line-height: .92;
@@ -164,21 +118,13 @@
     .shop-introduction {
       max-width: 680px;
       margin-top: 28px;
-
-      font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 25px;
       line-height: 1.35;
       color: #514b45;
     }
 
-
-    /* =========================================================
-       INFOS PRATIQUES
-    ========================================================= */
+    /* INFORMATIONS PRATIQUES */
 
     .shop-practical {
       padding: 34px 0 0;
@@ -192,20 +138,14 @@
     .practical-label {
       display: block;
       margin-bottom: 8px;
-
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: .18em;
-
       color: #81796f;
     }
 
     .practical-value {
-      font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 22px;
       line-height: 1.35;
     }
@@ -231,10 +171,7 @@
       color: #181512;
     }
 
-
-    /* =========================================================
-       QUOTIDIEN
-    ========================================================= */
+    /* LE CONSEIL */
 
     .daily-section {
       padding: 115px 0;
@@ -251,10 +188,7 @@
     .daily-photo {
       min-height: 590px;
       background: #d8d1c7;
-
-      background-image:
-        url("images/interieur-boucherie-du-square.jpg");
-
+      background-image: url("images/interieur-boucherie-du-square.jpg");
       background-size: cover;
       background-position: center;
     }
@@ -265,12 +199,7 @@
 
     .daily-content h2 {
       margin: 0 0 28px;
-
-      font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(50px, 5vw, 72px);
       line-height: .95;
       font-weight: 400;
@@ -287,10 +216,7 @@
       margin-top: 28px;
     }
 
-
-    /* =========================================================
-       AUTRE BOUTIQUE
-    ========================================================= */
+    /* AUTRE BOUTIQUE */
 
     .other-shop {
       padding: 85px 0;
@@ -314,26 +240,16 @@
 
     .other-shop h2 {
       margin: 0;
-
-      font-family:
-        "Cormorant Garamond",
-        Georgia,
-        serif;
-
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: clamp(40px, 4vw, 60px);
       font-weight: 400;
     }
 
-
-    /* =========================================================
-       MOBILE
-    ========================================================= */
+    /* NAVIGATION SUR PETITS ÉCRANS */
 
     @media (max-width: 1100px) {
-
       .site-header {
-        grid-template-columns:
-          1fr auto;
+        grid-template-columns: 1fr auto;
       }
 
       .main-nav,
@@ -349,29 +265,15 @@
         position: fixed;
         inset: 0;
         z-index: 1000;
-
         display: flex;
         flex-direction: column;
-
-        padding:
-          120px 28px 42px;
-
-        background:
-          rgba(12,11,10,.985);
-
+        padding: 120px 28px 42px;
+        background: rgba(12,11,10,.985);
         color: white;
-
         opacity: 0;
         visibility: hidden;
-
-        transform:
-          translateY(-12px);
-
-        transition:
-          opacity .25s ease,
-          visibility .25s ease,
-          transform .25s ease;
-
+        transform: translateY(-12px);
+        transition: opacity .25s ease, visibility .25s ease, transform .25s ease;
         overflow-y: auto;
       }
 
@@ -382,55 +284,28 @@
       }
 
       .mobile-menu-inner {
-        width:
-          min(
-            100%,
-            620px
-          );
-
-        margin:
-          0 auto;
+        width: min(100%, 620px);
+        margin: 0 auto;
       }
 
       .mobile-menu-label {
-        margin:
-          0 0 16px;
-
+        margin: 0 0 16px;
         font-size: 10px;
         text-transform: uppercase;
         letter-spacing: .25em;
-
-        color:
-          rgba(255,255,255,.42);
+        color: rgba(255,255,255,.42);
       }
 
       .mobile-menu-group {
-        padding:
-          25px 0;
-
-        border-bottom:
-          1px solid
-          rgba(255,255,255,.14);
+        padding: 25px 0;
+        border-bottom: 1px solid rgba(255,255,255,.14);
       }
 
       .mobile-menu-main-link {
         display: block;
-
-        padding:
-          9px 0;
-
-        font-family:
-          "Cormorant Garamond",
-          Georgia,
-          serif;
-
-        font-size:
-          clamp(
-            35px,
-            8vw,
-            48px
-          );
-
+        padding: 9px 0;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: clamp(35px, 8vw, 48px);
         line-height: 1;
         text-decoration: none;
       }
@@ -438,21 +313,14 @@
       .mobile-submenu {
         display: flex;
         flex-direction: column;
-
         gap: 13px;
-
         margin-top: 20px;
         padding-left: 17px;
-
-        border-left:
-          1px solid
-          rgba(255,255,255,.25);
+        border-left: 1px solid rgba(255,255,255,.25);
       }
 
       .mobile-submenu a {
-        color:
-          rgba(255,255,255,.72);
-
+        color: rgba(255,255,255,.72);
         font-size: 14px;
         line-height: 1.5;
         text-decoration: none;
@@ -460,24 +328,18 @@
 
       .mobile-menu-footer {
         margin-top: 45px;
-
         font-size: 10px;
         text-transform: uppercase;
         letter-spacing: .19em;
-
-        color:
-          rgba(255,255,255,.36);
+        color: rgba(255,255,255,.36);
       }
 
       body.menu-open {
         overflow: hidden;
       }
-
     }
 
-
     @media (max-width: 850px) {
-
       .shop-hero {
         min-height: 300px;
         background-position: center top;
@@ -513,628 +375,301 @@
         flex-direction: column;
         align-items: flex-start;
       }
-
     }
 
-
     @media (max-width: 600px) {
-
       .menu-toggle {
         width: 42px;
         height: 42px;
       }
 
       .mobile-menu {
-        padding:
-          105px 20px 36px;
+        padding: 105px 20px 36px;
       }
-
     }
-
   </style>
-
 </head>
-
 
 <body>
 
+  <!-- EN-TÊTE -->
 
-<!-- =========================================================
-HEADER
-========================================================= -->
+  <div class="internal-header">
+    <header class="site-header">
 
-<div class="internal-header">
+      <a href="index.html" class="brand">
+        <span class="brand-main">Le Billot &amp; le Square</span>
+        <span class="brand-sub">Boucheries artisanales · Paris</span>
+      </a>
 
-  <header class="site-header">
+      <nav class="main-nav">
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-button">
+            Nos boutiques
+            <span class="nav-arrow">⌄</span>
+          </button>
 
-    <a href="index.html" class="brand">
+          <div class="dropdown-menu">
+            <a href="billot-de-daguerre.html">Le Billot de Daguerre</a>
+            <a href="boucherie-du-square.html">Boucherie du Square</a>
+          </div>
+        </div>
 
-      <span class="brand-main">
-        Le Billot & le Square
-      </span>
+        <a href="nos-produits.html">Nos produits</a>
+        <a href="la-maison.html">La Maison</a>
+        <a href="carte-de-saison.html">Notre carte de saison</a>
+      </nav>
 
-      <span class="brand-sub">
-        Boucheries artisanales · Paris
-      </span>
+      <a href="nos-produits.html" class="header-cta">
+        Voir nos produits <span>→</span>
+      </a>
 
-    </a>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Ouvrir le menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
+    </header>
+  </div>
 
-    <!-- NAVIGATION DESKTOP -->
+  <!-- MENU MOBILE -->
 
-    <nav class="main-nav">
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Navigation mobile">
+    <div class="mobile-menu-inner">
 
-      <div class="nav-dropdown">
+      <div class="mobile-menu-group">
+        <p class="mobile-menu-label">Nos boutiques</p>
+        <div class="mobile-submenu">
+          <a href="billot-de-daguerre.html">Le Billot de Daguerre</a>
+          <a href="boucherie-du-square.html">Boucherie du Square</a>
+        </div>
+      </div>
 
-        <button class="nav-dropdown-button">
-          Nos boutiques
-          <span class="nav-arrow">⌄</span>
-        </button>
+      <div class="mobile-menu-group">
+        <a href="nos-produits.html" class="mobile-menu-main-link">
+          Nos produits
+        </a>
+      </div>
 
-        <div class="dropdown-menu">
+      <div class="mobile-menu-group">
+        <a href="la-maison.html" class="mobile-menu-main-link">
+          La Maison
+        </a>
+      </div>
 
-          <a href="billot-de-daguerre.html">
-            Le Billot de Daguerre
+      <div class="mobile-menu-group">
+        <a href="carte-de-saison.html" class="mobile-menu-main-link">
+          Notre carte de saison
+        </a>
+      </div>
+
+      <div class="mobile-menu-footer">Le Billot &amp; le Square · Paris</div>
+
+    </div>
+  </nav>
+
+  <!-- PHOTO D’OUVERTURE -->
+
+  <section class="shop-hero" aria-label="Boucherie du Square"></section>
+
+  <!-- PRÉSENTATION ET INFORMATIONS PRATIQUES -->
+
+  <section class="shop-intro">
+    <div class="container shop-intro-grid">
+
+      <div>
+        <p class="shop-label">Paris 15ᵉ · Rue du Commerce</p>
+
+        <h1>Boucherie<br>du Square</h1>
+
+        <p class="shop-introduction">
+          Dans le 15ᵉ arrondissement, la Boucherie du Square cultive
+          l’esprit d’une adresse de proximité, attentive à la qualité
+          des produits et au conseil.
+        </p>
+      </div>
+
+      <aside class="shop-practical">
+
+        <div class="practical-item">
+          <span class="practical-label">Adresse</span>
+          <div class="practical-value">
+            85 rue du Commerce<br>
+            75015 Paris
+          </div>
+        </div>
+
+        <div class="practical-item">
+          <span class="practical-label">Horaires d’ouverture</span>
+          <div class="practical-value">
+            Du mardi au vendredi : 8&nbsp;h – 13&nbsp;h et 15&nbsp;h – 19&nbsp;h&nbsp;45<br>
+            Samedi : 8&nbsp;h – 19&nbsp;h&nbsp;45 en continu<br>
+            Dimanche : 8&nbsp;h – 13&nbsp;h<br>
+            Lundi : fermé
+          </div>
+        </div>
+
+        <div class="practical-item">
+          <span class="practical-label">Téléphone</span>
+          <div class="practical-value">
+            <a href="tel:+33148280441">01 48 28 04 41</a>
+          </div>
+        </div>
+
+        <div class="shop-buttons">
+          <a href="tel:+33148280441" class="btn btn-dark">
+            Appeler la boutique
           </a>
 
-          <a href="boucherie-du-square.html">
-            Boucherie du Square
+          <a
+            href="https://www.google.com/maps/dir/?api=1&amp;destination=85+rue+du+Commerce%2C+75015+Paris%2C+France"
+            class="btn btn-line-dark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Itinéraire <span aria-hidden="true">→</span>
           </a>
-
         </div>
 
-      </div>
+      </aside>
 
+    </div>
+  </section>
 
-      <a href="nos-produits.html">
-        Nos produits
-      </a>
+  <!-- LE CONSEIL -->
 
-      <a href="la-maison.html">
-        La Maison
-      </a>
+  <section class="daily-section">
+    <div class="container daily-grid">
 
-      <a href="carte-de-saison.html">
-        Notre carte de saison
-      </a>
+      <div class="daily-photo" aria-label="Boucherie du Square"></div>
 
-    </nav>
+      <div class="daily-content">
+        <p class="section-kicker">Boucherie du Square</p>
 
+        <h2>Le conseil,<br>au cœur du quartier</h2>
 
-    <a
-      href="nos-produits.html"
-      class="header-cta"
-    >
-      Voir nos produits
-      <span>→</span>
-    </a>
+        <p>
+          À la Boucherie du Square, l’accueil et la proximité
+          occupent une place essentielle. L’équipe vous accompagne
+          dans le choix des produits, vous conseille selon vos envies
+          et vous aide à trouver les morceaux les plus adaptés à vos repas.
+        </p>
 
+        <p>
+          Une adresse pensée pour le quotidien, avec le goût du bon produit,
+          le sens du service et l’attention portée à chaque client.
+        </p>
 
-    <!-- BOUTON HAMBURGER MOBILE -->
-
-    <button
-      class="menu-toggle"
-      id="menuToggle"
-      aria-label="Ouvrir le menu"
-      aria-expanded="false"
-      aria-controls="mobileMenu"
-    >
-
-      <span></span>
-      <span></span>
-      <span></span>
-
-    </button>
-
-  </header>
-
-</div>
-
-
-
-<!-- =========================================================
-MENU MOBILE
-========================================================= -->
-
-<nav
-  class="mobile-menu"
-  id="mobileMenu"
-  aria-label="Navigation mobile"
->
-
-  <div class="mobile-menu-inner">
-
-
-    <div class="mobile-menu-group">
-
-      <p class="mobile-menu-label">
-        Nos boutiques
-      </p>
-
-      <div class="mobile-submenu">
-
-        <a href="billot-de-daguerre.html">
-          Le Billot de Daguerre
+        <a href="la-maison.html" class="btn btn-dark">
+          Découvrir la Maison <span>→</span>
         </a>
-
-        <a href="boucherie-du-square.html">
-          Boucherie du Square
-        </a>
-
       </div>
 
     </div>
+  </section>
 
+  <!-- AUTRE BOUTIQUE -->
 
-    <div class="mobile-menu-group">
+  <section class="other-shop">
+    <div class="container other-shop-inner">
 
-      <a
-        href="nos-produits.html"
-        class="mobile-menu-main-link"
-      >
-        Nos produits
-      </a>
-
-    </div>
-
-
-    <div class="mobile-menu-group">
-
-      <a
-        href="la-maison.html"
-        class="mobile-menu-main-link"
-      >
-        La Maison
-      </a>
-
-    </div>
-
-
-    <div class="mobile-menu-group">
-
-      <a
-        href="carte-de-saison.html"
-        class="mobile-menu-main-link"
-      >
-        Notre carte de saison
-      </a>
-
-    </div>
-
-
-    <div class="mobile-menu-footer">
-      Le Billot & le Square · Paris
-    </div>
-
-  </div>
-
-</nav>
-
-
-
-<!-- =========================================================
-PHOTO D'OUVERTURE
-========================================================= -->
-
-<section
-  class="shop-hero"
-  aria-label="Boucherie du Square"
->
-</section>
-
-
-
-<!-- =========================================================
-PRESENTATION
-========================================================= -->
-
-<section class="shop-intro">
-
-  <div class="container shop-intro-grid">
-
-
-    <div>
-
-      <p class="shop-label">
-        Paris 15ᵉ · Rue du Commerce
-      </p>
-
-      <h1>
-        Boucherie<br>
-        du Square
-      </h1>
-
-      <p class="shop-introduction">
-
-        Dans le 15ᵉ arrondissement,
-        la Boucherie du Square cultive
-        l’esprit d’une adresse de proximité,
-        attentive à la qualité des produits
-        et au conseil.
-
-      </p>
-
-    </div>
-
-
-    <aside class="shop-practical">
-
-
-      <div class="practical-item">
-
-        <span class="practical-label">
-          Adresse
-        </span>
-
-        <div class="practical-value">
-          Adresse à confirmer<br>
-          75015 Paris
-        </div>
-
+      <div>
+        <p>Découvrez aussi notre autre adresse</p>
+        <h2>Le Billot de Daguerre</h2>
       </div>
 
+      <a href="billot-de-daguerre.html" class="text-link">
+        Découvrir Le Billot de Daguerre <span>→</span>
+      </a>
 
-      <div class="practical-item">
+    </div>
+  </section>
 
-        <span class="practical-label">
-          Horaires
-        </span>
+  <!-- PIED DE PAGE -->
 
-        <div class="practical-value">
-          Horaires à confirmer
-        </div>
+  <footer class="footer">
+    <div class="container footer-top">
 
+      <div>
+        <div class="footer-brand">Le Billot &amp; le Square</div>
+        <p>
+          Deux boucheries artisanales à Paris,<br>
+          dans les 14ᵉ et 15ᵉ arrondissements.
+        </p>
       </div>
 
+      <nav class="footer-nav">
+        <a href="billot-de-daguerre.html">Le Billot de Daguerre</a>
+        <a href="boucherie-du-square.html">Boucherie du Square</a>
+        <a href="nos-produits.html">Nos produits</a>
+        <a href="la-maison.html">La Maison</a>
+        <a href="carte-de-saison.html">Notre carte de saison</a>
+      </nav>
 
-      <div class="practical-item">
+    </div>
 
-        <span class="practical-label">
-          Téléphone
-        </span>
-
-        <div class="practical-value">
-          Numéro à confirmer
-        </div>
-
+    <div class="container footer-bottom">
+      <span>© Le Billot &amp; le Square</span>
+      <div>
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
       </div>
-
-
-      <div class="shop-buttons">
-
-        <a
-          href="#"
-          class="btn btn-dark"
-        >
-          Appeler la boutique
-        </a>
-
-        <a
-          href="#"
-          class="btn btn-line-dark"
-        >
-          Itinéraire
-          <span>→</span>
-        </a>
-
-      </div>
-
-    </aside>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-LE CONSEIL
-========================================================= -->
-
-<section class="daily-section">
-
-  <div class="container daily-grid">
-
-
-    <div
-      class="daily-photo"
-      aria-label="Boucherie du Square"
-    >
     </div>
-
-
-    <div class="daily-content">
-
-      <p class="section-kicker">
-        Boucherie du Square
-      </p>
-
-      <h2>
-        Le conseil,<br>
-        au cœur du quartier
-      </h2>
-
-
-      <p>
-
-        À la Boucherie du Square,
-        l’accueil et la proximité
-        occupent une place essentielle.
-
-        L’équipe vous accompagne
-        dans le choix des produits,
-        vous conseille selon vos envies
-        et vous aide à trouver
-        les morceaux les plus adaptés
-        à vos repas.
-
-      </p>
-
-
-      <p>
-
-        Une adresse pensée pour le quotidien,
-        avec le goût du bon produit,
-        le sens du service
-        et l’attention portée à chaque client.
-
-      </p>
-
-
-      <a
-        href="la-maison.html"
-        class="btn btn-dark"
-      >
-        Découvrir la Maison
-        <span>→</span>
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-AUTRE BOUTIQUE
-========================================================= -->
-
-<section class="other-shop">
-
-  <div class="container other-shop-inner">
-
-
-    <div>
-
-      <p>
-        Découvrez aussi notre autre adresse
-      </p>
-
-      <h2>
-        Le Billot de Daguerre
-      </h2>
-
-    </div>
-
-
-    <a
-      href="billot-de-daguerre.html"
-      class="text-link"
-    >
-      Découvrir Le Billot de Daguerre
-      <span>→</span>
-    </a>
-
-  </div>
-
-</section>
-
-
-
-<!-- =========================================================
-FOOTER
-========================================================= -->
-
-<footer class="footer">
-
-  <div class="container footer-top">
-
-
-    <div>
-
-      <div class="footer-brand">
-        Le Billot & le Square
-      </div>
-
-      <p>
-        Deux boucheries artisanales à Paris,<br>
-        dans les 14ᵉ et 15ᵉ arrondissements.
-      </p>
-
-    </div>
-
-
-    <nav class="footer-nav">
-
-      <a href="billot-de-daguerre.html">
-        Le Billot de Daguerre
-      </a>
-
-      <a href="boucherie-du-square.html">
-        Boucherie du Square
-      </a>
-
-      <a href="nos-produits.html">
-        Nos produits
-      </a>
-
-      <a href="la-maison.html">
-        La Maison
-      </a>
-
-      <a href="carte-de-saison.html">
-        Notre carte de saison
-      </a>
-
-    </nav>
-
-  </div>
-
-
-  <div class="container footer-bottom">
-
-    <span>
-      © Le Billot & le Square
-    </span>
-
-    <div>
-
-      <a href="#">
-        Mentions légales
-      </a>
-
-      <a href="#">
-        Confidentialité
-      </a>
-
-    </div>
-
-  </div>
-
-</footer>
-
-
-
-<!-- =========================================================
-JAVASCRIPT MENU MOBILE
-========================================================= -->
-
-<script>
-
-  const menuToggle =
-    document.getElementById("menuToggle");
-
-  const mobileMenu =
-    document.getElementById("mobileMenu");
-
-
-  function closeMobileMenu() {
-
-    menuToggle.classList.remove("is-open");
-
-    mobileMenu.classList.remove("is-open");
-
-    document.body.classList.remove("menu-open");
-
-    menuToggle.setAttribute(
-      "aria-expanded",
-      "false"
-    );
-
-    menuToggle.setAttribute(
-      "aria-label",
-      "Ouvrir le menu"
-    );
-
-  }
-
-
-  function openMobileMenu() {
-
-    menuToggle.classList.add("is-open");
-
-    mobileMenu.classList.add("is-open");
-
-    document.body.classList.add("menu-open");
-
-    menuToggle.setAttribute(
-      "aria-expanded",
-      "true"
-    );
-
-    menuToggle.setAttribute(
-      "aria-label",
-      "Fermer le menu"
-    );
-
-  }
-
-
-  menuToggle.addEventListener(
-    "click",
-    function () {
-
-      const isOpen =
-        mobileMenu.classList.contains(
-          "is-open"
-        );
-
-      if (isOpen) {
-
-        closeMobileMenu();
-
-      } else {
-
-        openMobileMenu();
-
-      }
-
+  </footer>
+
+  <!-- FONCTIONNEMENT DU MENU MOBILE -->
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    function closeMobileMenu() {
+      menuToggle.classList.remove("is-open");
+      mobileMenu.classList.remove("is-open");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Ouvrir le menu");
     }
-  );
 
+    function openMobileMenu() {
+      menuToggle.classList.add("is-open");
+      mobileMenu.classList.add("is-open");
+      document.body.classList.add("menu-open");
+      menuToggle.setAttribute("aria-expanded", "true");
+      menuToggle.setAttribute("aria-label", "Fermer le menu");
+    }
 
-  mobileMenu
-    .querySelectorAll("a")
-    .forEach(function(link) {
-
-      link.addEventListener(
-        "click",
-        closeMobileMenu
-      );
-
+    menuToggle.addEventListener("click", function () {
+      if (mobileMenu.classList.contains("is-open")) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
 
+    mobileMenu.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeMobileMenu);
+    });
 
-  document.addEventListener(
-    "keydown",
-    function(event) {
-
-      if (
-        event.key === "Escape"
-        &&
-        mobileMenu.classList.contains(
-          "is-open"
-        )
-      ) {
-
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && mobileMenu.classList.contains("is-open")) {
         closeMobileMenu();
-
       }
+    });
 
-    }
-  );
-
-
-  window.addEventListener(
-    "resize",
-    function() {
-
-      if (
-        window.innerWidth > 1100
-      ) {
-
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 1100) {
         closeMobileMenu();
-
       }
-
-    }
-  );
-
-</script>
-
+    });
+  </script>
 
 </body>
-
 </html>
