@@ -171,6 +171,51 @@
       color: #181512;
     }
 
+    /* BANDEAU OLLCA */
+
+    .ollca-banner {
+      padding: clamp(24px, 3vw, 38px) 0;
+      background: #f8f5ef;
+      border-top: 1px solid rgba(24,21,18,.16);
+      border-bottom: 1px solid rgba(24,21,18,.16);
+    }
+
+    .ollca-inner {
+      display: grid;
+      grid-template-columns: 132px minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 24px 32px;
+    }
+
+    .ollca-logo {
+      display: block;
+      width: 132px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .ollca-copy h2 {
+      margin: 0 0 6px;
+      color: #181512;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(30px, 3vw, 40px);
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .ollca-copy p {
+      margin: 0;
+      color: #514b45;
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .ollca-inner .btn {
+      max-width: 100%;
+      text-align: center;
+      white-space: normal;
+    }
+
     /* LE CONSEIL */
 
     .daily-section {
@@ -339,6 +384,8 @@
       }
     }
 
+    /* TABLETTE */
+
     @media (max-width: 850px) {
       .shop-hero {
         min-height: 300px;
@@ -356,6 +403,16 @@
 
       .shop-introduction {
         font-size: 22px;
+      }
+
+      .ollca-inner {
+        grid-template-columns: 110px minmax(0, 1fr);
+        gap: 16px 24px;
+      }
+
+      .ollca-inner .btn {
+        grid-column: 2;
+        justify-self: start;
       }
 
       .daily-section {
@@ -377,6 +434,8 @@
       }
     }
 
+    /* MOBILE */
+
     @media (max-width: 600px) {
       .menu-toggle {
         width: 42px;
@@ -385,6 +444,20 @@
 
       .mobile-menu {
         padding: 105px 20px 36px;
+      }
+
+      .ollca-inner {
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: start;
+        gap: 16px;
+      }
+
+      .ollca-logo {
+        width: 100px;
+      }
+
+      .ollca-inner .btn {
+        grid-column: 1;
       }
     }
   </style>
@@ -543,6 +616,37 @@
     </div>
   </section>
 
+  <!-- BANDEAU DE COMMANDE EN LIGNE -->
+
+  <section class="ollca-banner" aria-labelledby="titre-ollca">
+    <div class="container ollca-inner">
+
+      <img
+        class="ollca-logo"
+        src="images/Logo-Ollca.png"
+        alt="Ollca"
+        loading="lazy"
+        decoding="async"
+      >
+
+      <div class="ollca-copy">
+        <h2 id="titre-ollca">Votre boucherie en ligne</h2>
+        <p>
+          Retrouvez nos viandes, charcuteries et spécialités bouchères sur Ollca.
+        </p>
+      </div>
+
+      <a
+        href="https://www.ollca.com/paris/boutiques/boucherie-du-square"
+        class="btn btn-dark"
+      >
+        Commander sur notre boutique en ligne
+        <span aria-hidden="true">→</span>
+      </a>
+
+    </div>
+  </section>
+
   <!-- LE CONSEIL -->
 
   <section class="daily-section">
@@ -618,8 +722,8 @@
     <div class="container footer-bottom">
       <span>© Le Billot &amp; le Square</span>
       <div>
-        <a href="#">Mentions légales</a>
-        <a href="#">Confidentialité</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="confidentialite.html">Confidentialité</a>
       </div>
     </div>
   </footer>
