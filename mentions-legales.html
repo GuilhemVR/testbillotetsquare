@@ -1,1 +1,386 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Mentions légales — Le Billot &amp; le Square</title>
+  <meta
+    name="description"
+    content="Mentions légales du site de la Boucherie du Square et du Billot de Daguerre : éditeur, coordonnées, hébergement et médiation."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Montserrat:wght@400;500;600&amp;display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --ivoire: #f8f5ef;
+      --noir: #0c0b0a;
+      --texte: #181512;
+      --texte-secondaire: #57514a;
+      --filet: #d8d1c7;
+      --serif: "Cormorant Garamond", Georgia, serif;
+      --sans: "Montserrat", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--ivoire);
+      color: var(--texte);
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    a {
+      color: inherit;
+      text-underline-offset: 4px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid currentColor;
+      outline-offset: 4px;
+    }
+
+    /* EN-TÊTE ET PIED DE PAGE */
+
+    .legal-header,
+    .legal-footer {
+      background: var(--noir);
+      color: #fff;
+    }
+
+    .legal-bar {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: 24px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px 28px;
+    }
+
+    .legal-brand {
+      display: inline-flex;
+      flex-direction: column;
+      gap: 7px;
+      text-decoration: none;
+    }
+
+    .legal-brand-name {
+      font-family: var(--serif);
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 1;
+    }
+
+    .legal-brand-subtitle,
+    .legal-back,
+    .legal-kicker {
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+    }
+
+    .legal-brand-subtitle {
+      color: #c7c1bb;
+    }
+
+    .legal-back {
+      text-decoration: none;
+    }
+
+    .legal-back:hover {
+      text-decoration: underline;
+    }
+
+    .legal-footer .legal-bar {
+      font-size: 12px;
+    }
+
+    /* CONTENU */
+
+    .legal-main {
+      width: min(820px, calc(100% - 48px));
+      margin: 0 auto;
+      padding: clamp(52px, 7vw, 100px) 0;
+    }
+
+    .legal-kicker {
+      margin: 0 0 14px;
+      color: var(--texte-secondaire);
+      letter-spacing: .28em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      font-family: var(--serif);
+      font-weight: 400;
+      line-height: 1.08;
+    }
+
+    h1 {
+      margin-bottom: 46px;
+      font-size: clamp(52px, 7vw, 84px);
+      letter-spacing: -.04em;
+    }
+
+    .legal-section {
+      padding: 32px 0;
+      border-top: 1px solid var(--filet);
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: clamp(32px, 4vw, 44px);
+      letter-spacing: -.025em;
+    }
+
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 28px;
+    }
+
+    .legal-section p {
+      margin: 0 0 14px;
+      color: var(--texte-secondaire);
+    }
+
+    .legal-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-section strong {
+      color: var(--texte);
+      font-weight: 600;
+    }
+
+    .legal-details {
+      margin: 18px 0 0;
+    }
+
+    .legal-details > div {
+      display: grid;
+      grid-template-columns: minmax(150px, 205px) 1fr;
+      gap: 12px;
+      padding: 4px 0;
+    }
+
+    .legal-details dt {
+      font-weight: 600;
+    }
+
+    .legal-details dd {
+      margin: 0;
+      color: var(--texte-secondaire);
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 600px) {
+      .legal-bar,
+      .legal-main {
+        width: calc(100% - 36px);
+      }
+
+      .legal-brand-name {
+        font-size: 25px;
+      }
+
+      .legal-brand-subtitle {
+        font-size: 8px;
+      }
+
+      .legal-details > div {
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 6px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="legal-header">
+    <div class="legal-bar">
+      <a class="legal-brand" href="index.html">
+        <span class="legal-brand-name">Le Billot &amp; le Square</span>
+        <span class="legal-brand-subtitle">Boucheries artisanales · Paris</span>
+      </a>
+
+      <a class="legal-back" href="index.html">
+        <span aria-hidden="true">←</span> Accueil
+      </a>
+    </div>
+  </header>
+
+  <main class="legal-main">
+
+    <p class="legal-kicker">Informations légales</p>
+    <h1>Mentions légales</h1>
+
+    <!-- ÉDITEUR DU SITE -->
+
+    <section class="legal-section">
+      <h2>Éditeur du site</h2>
+
+      <p>
+        Le présent site est édité par <strong>BOUCHERIE DU SQUARE</strong>,
+        société par actions simplifiée (SAS) au capital de
+        <strong>20&nbsp;000&nbsp;€</strong>, dont le siège social est situé
+        <strong>85 rue du Commerce, 75015 Paris</strong>.
+      </p>
+
+      <dl class="legal-details">
+        <div>
+          <dt>Immatriculation</dt>
+          <dd>RCS Paris 104 294 467</dd>
+        </div>
+        <div>
+          <dt>SIRET du siège</dt>
+          <dd>104 294 467 00014</dd>
+        </div>
+        <div>
+          <dt>TVA intracommunautaire</dt>
+          <dd>FR19104294467</dd>
+        </div>
+        <div>
+          <dt>Directeur de la publication</dt>
+          <dd>Alain Vang</dd>
+        </div>
+        <div>
+          <dt>Adresse électronique</dt>
+          <dd>
+            <a href="mailto:alainvang@gmail.com">alainvang@gmail.com</a>
+          </dd>
+        </div>
+        <div>
+          <dt>Téléphone</dt>
+          <dd><a href="tel:+33148280441">01 48 28 04 41</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- BOUTIQUES -->
+
+    <section class="legal-section">
+      <h2>Boutiques présentées sur le site</h2>
+
+      <h3>Boucherie du Square</h3>
+      <p>
+        La Boucherie du Square, exploitée par la société éditrice,
+        accueille ses clients au <strong>85 rue du Commerce, 75015 Paris</strong>.<br>
+        Téléphone : <a href="tel:+33148280441">01 48 28 04 41</a>.
+      </p>
+
+      <h3>Le Billot de Daguerre</h3>
+      <p>
+        Le Billot de Daguerre est exploité par une société distincte,
+        <strong>LE BILLOT DE DAGUERRE</strong>, société à responsabilité
+        limitée (SARL) au capital de <strong>10&nbsp;000&nbsp;€</strong>,
+        dont le siège social et la boutique sont situés
+        <strong>10 bis rue Daguerre, 75014 Paris</strong>.
+      </p>
+
+      <dl class="legal-details">
+        <div>
+          <dt>Immatriculation</dt>
+          <dd>RCS Paris 953 725 421</dd>
+        </div>
+        <div>
+          <dt>SIRET du siège</dt>
+          <dd>953 725 421 00010</dd>
+        </div>
+        <div>
+          <dt>TVA intracommunautaire</dt>
+          <dd>FR61953725421</dd>
+        </div>
+        <div>
+          <dt>Téléphone</dt>
+          <dd><a href="tel:+33142181341">01 42 18 13 41</a></dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- HÉBERGEMENT : À COMPLÉTER AVANT PUBLICATION DÉFINITIVE -->
+
+    <section class="legal-section">
+      <h2>Hébergement</h2>
+
+      <dl class="legal-details">
+        <div>
+          <dt>Hébergeur</dt>
+          <dd>[Raison sociale de l’hébergeur définitif]</dd>
+        </div>
+        <div>
+          <dt>Adresse</dt>
+          <dd>[Adresse postale complète]</dd>
+        </div>
+        <div>
+          <dt>Téléphone</dt>
+          <dd>[Numéro de téléphone de l’hébergeur]</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- MÉDIATION : COORDONNÉES À CONFIRMER POUR CHAQUE SOCIÉTÉ -->
+
+    <section class="legal-section">
+      <h2>Réclamations et médiation de la consommation</h2>
+
+      <p>
+        Pour toute réclamation concernant un achat ou une commande,
+        vous pouvez écrire à
+        <a href="mailto:alainvang@gmail.com">alainvang@gmail.com</a>
+        en précisant la boutique concernée, ou adresser un courrier
+        à cette boutique à l’adresse indiquée ci-dessus.
+      </p>
+
+      <p>
+        Si votre réclamation écrite n’a pas permis de résoudre le litige,
+        vous pouvez saisir gratuitement le médiateur de la consommation
+        dont relève la société auprès de laquelle vous avez effectué votre achat.
+      </p>
+
+      <p>
+        <strong>Boucherie du Square :</strong>
+        [nom, adresse postale et site internet du médiateur compétent].
+      </p>
+
+      <p>
+        <strong>Le Billot de Daguerre :</strong>
+        [nom, adresse postale et site internet du médiateur compétent].
+      </p>
+    </section>
+
+    <!-- CRÉDITS -->
+
+    <section class="legal-section">
+      <h2>Crédits</h2>
+      <p>Conception du site et rédaction : <strong>Éloquence Créative</strong>.</p>
+    </section>
+
+  </main>
+
+  <footer class="legal-footer">
+    <div class="legal-bar">
+      <span>Le Billot &amp; le Square</span>
+      <a href="index.html">Retour à l’accueil</a>
+    </div>
+  </footer>
+
+</body>
+</html>
