@@ -75,51 +75,7 @@
       display: none;
     }
 
-    /* BANDEAU */
-
-    .season-hero {
-      position: relative;
-      min-height: 500px;
-      display: flex;
-      align-items: flex-end;
-      background-image:
-        linear-gradient(
-          180deg,
-          rgba(0, 0, 0, .08) 0%,
-          rgba(0, 0, 0, .18) 40%,
-          rgba(0, 0, 0, .74) 100%
-        ),
-        url("images/vitrine_boucherie.jpg");
-      background-size: cover;
-      background-position: center 55%;
-      color: white;
-    }
-
-    .season-hero-content {
-      position: relative;
-      z-index: 1;
-      width: min(1180px, calc(100% - 48px));
-      margin: 0 auto;
-      padding: 65px 0;
-    }
-
-    .season-hero .eyebrow {
-      margin-bottom: 20px;
-      color: rgba(255, 255, 255, .82);
-    }
-
-    .season-hero h1 {
-      max-width: 950px;
-      margin: 0;
-      color: white;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(64px, 8vw, 110px);
-      font-weight: 400;
-      line-height: .95;
-      letter-spacing: -.04em;
-    }
-
-    /* INTRODUCTION DE SAISON */
+    /* INTRODUCTION SANS PHOTO */
 
     .season-intro {
       padding: 95px 0 75px;
@@ -127,43 +83,39 @@
       color: #28231f;
     }
 
-    .season-intro-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 85px;
-      align-items: center;
-    }
-
     .season-intro .section-kicker {
+      margin-bottom: 25px;
       color: #80643a;
     }
 
-    .season-intro h2 {
+    .season-intro .season-page-title {
+      max-width: 900px;
       margin: 0;
+      color: #28231f;
       font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: clamp(50px, 5vw, 76px);
+      font-size: clamp(54px, 7vw, 94px);
       font-weight: 400;
       line-height: .98;
       letter-spacing: -.035em;
     }
 
-    .season-intro-copy {
-      max-width: 540px;
+    .season-edition {
+      margin: 30px 0 18px;
+      color: #80643a;
+      font-family: "Montserrat", Arial, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 1.7;
+      letter-spacing: .12em;
+      text-transform: uppercase;
     }
 
-    .season-intro-copy p {
+    .season-description {
+      max-width: 660px;
       margin: 0;
       color: #665f57;
       font-size: 15px;
       line-height: 1.9;
-    }
-
-    .season-intro-copy .lead {
-      margin-bottom: 18px;
-      color: #28231f;
-      font-family: "Cormorant Garamond", Georgia, serif;
-      font-size: 29px;
-      line-height: 1.35;
     }
 
     /* CARTE */
@@ -204,7 +156,7 @@
       letter-spacing: .2em;
     }
 
-    .season-category h3 {
+    .season-category h2 {
       margin: 0 0 28px;
       color: #28231f;
       font-family: "Cormorant Garamond", Georgia, serif;
@@ -214,7 +166,7 @@
       letter-spacing: -.025em;
     }
 
-    .season-category h4 {
+    .season-category h3 {
       margin: 30px 0 15px;
       color: #80643a;
       font-family: "Montserrat", Arial, sans-serif;
@@ -225,7 +177,7 @@
       text-transform: uppercase;
     }
 
-    .season-category h3 + h4 {
+    .season-category h2 + h3 {
       margin-top: 0;
     }
 
@@ -389,19 +341,6 @@
     /* ADAPTATION TABLETTE */
 
     @media (max-width: 900px) {
-      .season-hero {
-        min-height: 420px;
-      }
-
-      .season-intro-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-      }
-
-      .season-intro-copy {
-        max-width: 680px;
-      }
-
       .season-category:nth-child(odd) {
         padding-right: 30px;
       }
@@ -423,29 +362,8 @@
         padding: 105px 20px 36px;
       }
 
-      .season-hero {
-        min-height: 350px;
-      }
-
-      .season-hero-content {
-        width: calc(100% - 32px);
-        padding: 45px 0;
-      }
-
-      .season-hero h1 {
-        font-size: clamp(54px, 14vw, 76px);
-      }
-
       .season-intro {
         padding: 65px 0 45px;
-      }
-
-      .season-intro h2 {
-        font-size: 49px;
-      }
-
-      .season-intro-copy .lead {
-        font-size: 26px;
       }
 
       .season-menu {
@@ -463,7 +381,7 @@
         border-right: 0;
       }
 
-      .season-category h3 {
+      .season-category h2 {
         font-size: 39px;
         margin-bottom: 22px;
       }
@@ -585,37 +503,26 @@
 
   <main>
 
-    <!-- BANDEAU -->
+    <!-- INTRODUCTION SANS PHOTO -->
 
-    <section class="season-hero" aria-labelledby="season-title">
-      <div class="season-hero-content">
-        <p class="eyebrow">Le Billot &amp; le Square</p>
-        <h1 id="season-title">Notre carte de saison</h1>
-      </div>
-    </section>
+    <section class="season-intro" aria-labelledby="season-title">
+      <div class="container">
 
-    <!-- INTRODUCTION -->
+        <p class="section-kicker">Notre carte de saison</p>
 
-    <section class="season-intro" aria-labelledby="festive-title">
-      <div class="container season-intro-grid">
+        <h1 id="season-title" class="season-page-title">
+          À votre table<br>pour les fêtes
+        </h1>
 
-        <div>
-          <p class="section-kicker">Noël &amp; Nouvel An · 2026</p>
-          <h2 id="festive-title">À votre table<br>pour les fêtes</h2>
-        </div>
+        <p class="season-edition">
+          Noël &amp; Nouvel An · 2026
+        </p>
 
-        <div class="season-intro-copy">
-          <p class="lead">
-            Des entrées aux accompagnements, une carte pour
-            composer vos repas de fête.
-          </p>
-
-          <p>
-            Foie gras, volailles fermières, rôtis farcis et côtes
-            de bœuf maturées : découvrez les spécialités réunies
-            pour cette fin d’année.
-          </p>
-        </div>
+        <p class="season-description">
+          Foie gras, volailles fermières, rôtis farcis et côtes
+          de bœuf maturées : découvrez notre sélection pour
+          vos repas de fête.
+        </p>
 
       </div>
     </section>
@@ -630,7 +537,7 @@
 
           <article class="season-category">
             <span class="season-category-number" aria-hidden="true">01</span>
-            <h3>Les entrées</h3>
+            <h2>Les entrées</h2>
 
             <ul class="season-list">
               <li>Foie gras de canard mi-cuit</li>
@@ -656,9 +563,9 @@
 
           <article class="season-category">
             <span class="season-category-number" aria-hidden="true">02</span>
-            <h3>Les volailles fermières</h3>
+            <h2>Les volailles fermières</h2>
 
-            <h4>La Bresse · AOP</h4>
+            <h3>La Bresse · AOP</h3>
 
             <ul class="season-list">
               <li>Chapon de Bresse roulé</li>
@@ -667,7 +574,7 @@
               <li>Poulet de Bresse</li>
             </ul>
 
-            <h4>Les Landes · Label Rouge IGP</h4>
+            <h3>Les Landes · Label Rouge IGP</h3>
 
             <ul class="season-list">
               <li>Chapon fermier</li>
@@ -676,7 +583,7 @@
               <li>Chapon de pintade fermier</li>
             </ul>
 
-            <h4>Également à la carte</h4>
+            <h3>Également à la carte</h3>
 
             <ul class="season-list">
               <li>Oie fermière d’Anjou</li>
@@ -687,7 +594,7 @@
 
           <article class="season-category">
             <span class="season-category-number" aria-hidden="true">03</span>
-            <h3>Les rôtis de volailles farcis</h3>
+            <h2>Les rôtis de volailles farcis</h2>
 
             <ul class="season-list">
               <li>Rôti de chapon aux morilles et au foie gras</li>
@@ -702,7 +609,7 @@
 
           <article class="season-category">
             <span class="season-category-number" aria-hidden="true">04</span>
-            <h3>Les côtes de bœuf maturées</h3>
+            <h2>Les côtes de bœuf maturées</h2>
 
             <ul class="season-list">
               <li>Wagyu Kagoshima</li>
@@ -718,7 +625,7 @@
 
           <article class="season-category">
             <span class="season-category-number" aria-hidden="true">05</span>
-            <h3>Les gibiers</h3>
+            <h2>Les gibiers</h2>
 
             <ul class="season-list">
               <li>Filet de biche</li>
@@ -732,7 +639,7 @@
 
           <article class="season-category">
             <span class="season-category-number" aria-hidden="true">06</span>
-            <h3>Les accompagnements</h3>
+            <h2>Les accompagnements</h2>
 
             <ul class="season-list">
               <li>Gratin dauphinois</li>
